@@ -1,0 +1,65 @@
+.primary-bg{
+    background-color: #ED4A43;
+}
+
+.primary-text{
+    color: #fff;
+}
+
+.secondary-bg{
+    background-color: #22766E;
+}
+
+.secondary-text{
+    color: #22766E;
+}
+
+.navbar .navbar-brand{
+    color: #fff;
+}
+
+.navbar .nav-link{
+    color: #fff;
+}
+
+.navbar .nav-link:hover, .menu-item:hover{
+    color: #eee;
+}
+
+.menu-btn{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.menu-btn-wrap{
+    border: 1px solid #fff;
+}
+
+.menu-item{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    height: 4.5rem;
+    padding: 0;
+    color: #fff;
+}
+
+.logo {
+    margin-right: 24px;
+    font-weight: bold;
+    font-size: 3rem;
+    padding-bottom: 0.25rem;
+    padding-top: 0;
+    line-height: 3.25rem;
+}
+
+.search{
+    transition: width 0.15s linear;
+}
+
+.search input:focus{
+    border-color: #ced4da;
+}
+
+.navbar-dropdown{
+    margin-right: 16px;
+    font-size: 1.25rem;
+}
