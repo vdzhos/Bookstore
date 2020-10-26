@@ -22,8 +22,10 @@
     color: #fff;
 }
 
-.navbar .nav-link:hover, .menu-item:hover{
+.navbar .nav-link:hover, .menu-item:hover,
+.menu-item-collapsed:hover, .menu-item-expanded:hover{
     color: #eee;
+    text-decoration: none;
 }
 
 .menu-btn{
@@ -34,12 +36,20 @@
     border: 1px solid #fff;
 }
 
-.menu-item{
+.menu-item-expanded{
     font-size: 2.5rem;
     line-height: 2.5rem;
-    height: 4.5rem;
     padding: 0;
     color: #fff;
+}
+
+.menu-item-collapsed{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.menu-item-collapsed span{
+    font-size: 1.25rem;
 }
 
 .logo {
@@ -52,7 +62,7 @@
 }
 
 .search{
-    transition: width 0.15s linear;
+    transition:  0.15s linear;
 }
 
 .search input:focus{

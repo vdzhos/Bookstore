@@ -13,15 +13,16 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md primary-bg">
-        <a class="navbar-brand logo" href="#">Bookstore</a>
+    <header>
+        <nav class="navbar navbar-expand-md primary-bg">
+        <a class="navbar-brand logo" href="#">B</a>
 
         <button class="navbar-toggler menu-btn-wrap" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon menu-btn"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav mr-auto d-none d-md-flex">
                 <li class="nav-item dropdown navbar-dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
                         Categories
@@ -43,23 +44,65 @@
                     </div>
                 </li>
             </ul>
-            <div class="input-group search" id="mainSearchGroup" style="width: 18%">
+            <div class="input-group search col-md-2 col-12 p-0" id="mainSearchGroup">
                 <input class="form-control border-right-0 shadow-none" id="mainSearch" type="text">
                 <div class="input-group-append">
                     <span class="input-group-text secondary-text primary-text" style="background-color: #fff"><b class="fa fa-lg fa-search"></b></span>
                 </div>
             </div>
-            <div class="ml-3">
-                <a href="#" class="menu-item" style="font-size: 2.75rem;"><i class="fa fa-shopping-cart"></i></a>
+            <ul class="navbar-nav mr-auto d-xs-flex d-md-none">
+                <li class="nav-item dropdown navbar-dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                        Categories
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown navbar-dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                        Authors
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="d-none d-md-block">
+                <div class="ml-3 d-inline-block">
+                    <a href="#" class="menu-item-expanded" style="font-size: 2.75rem;"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+                <div class="ml-3 d-inline-block">
+                    <a href="#" class="menu-item-expanded"><i class="fa fa-sm fa-heart"></i></a>
+                </div>
+                <div class="ml-3 d-inline-block">
+                    <a href="#" class="menu-item-expanded"><i class="fa fa-user-circle"></i></a>
+                </div>
             </div>
-            <div class="ml-3">
-                <a href="#" class="menu-item"><i class="fa fa-sm fa-heart"></i></a>
-            </div>
-            <div class="ml-3">
-                <a href="#" class="menu-item"><i class="fa fa-user-circle"></i></a>
+            <div class="d-md-none">
+                <div class="d-block my-2">
+                    <a href="#" class="menu-item-collapsed"><i class="fa fa-shopping-cart"></i><span> Shopping cart</span></a>
+                </div>
+                <div class="d-block my-2">
+                    <a href="#" class="menu-item-collapsed"><i class="fa fa-sm fa-heart"></i><span> Wish list</span></a>
+                </div>
+                <div class="d-block my-2">
+                    <a href="#" class="menu-item-collapsed"><i class="fa fa-user-circle"></i><span> Account</span></a>
+                </div>
             </div>
         </div>
     </nav>
+    </header>
+    <div class="main-body">
+
+    </div>
+    <footer>
+        
+    </footer>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
