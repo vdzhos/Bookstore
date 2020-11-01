@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="043f71b5-df44-46c0-aba5-f71a98695f88" name="Default Changelist" comment="Add the demo version of navbar (expanded).">
+    <list default="true" id="043f71b5-df44-46c0-aba5-f71a98695f88" name="Default Changelist" comment="Add the collapsed look of the navbar">
+      <change beforePath="$PROJECT_DIR$/.idea/Bookstore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Bookstore.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
@@ -72,7 +74,15 @@
       <workItem from="1603646055912" duration="6378000" />
       <workItem from="1603702807436" duration="1218000" />
       <workItem from="1603709419712" duration="5511000" />
-      <workItem from="1603714945709" duration="1461000" />
+      <workItem from="1603714945709" duration="2743000" />
+      <workItem from="1603725684663" duration="632000" />
+      <workItem from="1603784128994" duration="6864000" />
+      <workItem from="1603795310705" duration="76000" />
+      <workItem from="1603887973945" duration="1211000" />
+      <workItem from="1603992306977" duration="1173000" />
+      <workItem from="1604176650152" duration="8860000" />
+      <workItem from="1604186754254" duration="5058000" />
+      <workItem from="1604264246085" duration="4394000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit 2 (main files created)">
       <created>1603361144714</created>
@@ -88,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603652438072</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add the collapsed look of the navbar">
+      <created>1603716521705</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603716521705</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,20 +126,21 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit 2 (main files created)" />
     <MESSAGE value="Add the demo version of navbar (expanded)." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add the demo version of navbar (expanded)." />
+    <MESSAGE value="Add the collapsed look of the navbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add the collapsed look of the navbar" />
   </component>
   <component name="WindowStateProjectService">
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1603473131841">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603473131841" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1603652451425">
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1603716529725">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603652451425" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603490449041">
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603716529725" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604189722148">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603490449041" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604189722148" />
   </component>
 </project>

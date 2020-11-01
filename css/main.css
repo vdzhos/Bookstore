@@ -37,8 +37,8 @@
 }
 
 .menu-item-expanded{
-    font-size: 2.5rem;
-    line-height: 2.5rem;
+    font-size: 2.25rem;
+    line-height: 2.25rem;
     padding: 0;
     color: #fff;
 }
@@ -52,6 +52,14 @@
     font-size: 1.25rem;
 }
 
+.image-text{
+    top: 0;
+    font-weight: bold;
+    font-size: 6vw;
+    text-align: center;
+
+}
+
 .logo {
     margin-right: 24px;
     font-weight: bold;
@@ -61,8 +69,8 @@
     line-height: 3.25rem;
 }
 
-.search{
-    transition:  0.15s linear;
+.search .form-control, .search, .search .input-group-text{
+    transition: all 0.15s linear;
 }
 
 .search input:focus{
@@ -73,3 +81,65 @@
     margin-right: 16px;
     font-size: 1.25rem;
 }
+
+.site-footer{
+    background-color: #222;
+}
+
+.footer-content{
+    background-color: #222222;
+}
+
+.social-media-block .logo{
+    font-size: 2.7em;
+    font-weight: bold;
+}
+
+.social-media-block .fab {
+    padding: 15px;
+    width: 60px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ED4A43;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.social-media-block .social-media{
+    font-size: 1.15em;
+}
+
+.social-media-block .fab:hover{
+    background-color: #ef706a;
+    color: #fff;
+}
+
+.info-block .info-list, .contacts-block .contacts-list{
+    margin-top: 12px;
+}
+
+.info-block .info-list a{
+    text-decoration: none;
+    color: #aaaaaa;
+    font-size: 18px;
+    line-height: 38px;
+    font-weight: bold;
+}
+
+.info-block .info-list a:hover{
+    color: #FFFFFF;
+}
+
+.contacts-block .contacts-list div{
+    color: #aaaaaa;
+    font-size: 18px;
+    line-height: 38px;
+    font-weight: bold;
+}
+
+.contacts-block .contacts-list span{
+    color: #ED4A43;
+}
+
+

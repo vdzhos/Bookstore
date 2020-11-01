@@ -9,12 +9,13 @@
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-md primary-bg">
+        <nav class="navbar navbar-expand-md primary-bg user-select-none">
         <a class="navbar-brand logo" href="#">B</a>
 
         <button class="navbar-toggler menu-btn-wrap" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -45,9 +46,9 @@
                 </li>
             </ul>
             <div class="input-group search col-md-2 col-12 p-0" id="mainSearchGroup">
-                <input class="form-control border-right-0 shadow-none" id="mainSearch" type="text">
+                <input class="form-control border-right-0 shadow-none primary-bg" id="mainSearch" type="text">
                 <div class="input-group-append">
-                    <span class="input-group-text secondary-text primary-text" style="background-color: #fff"><b class="fa fa-lg fa-search"></b></span>
+                    <span class="input-group-text primary-text primary-bg" id="mainSearchIcon"><b class="fa fa-lg fa-search"></b></span>
                 </div>
             </div>
             <ul class="navbar-nav mr-auto d-xs-flex d-md-none">
@@ -74,10 +75,10 @@
             </ul>
             <div class="d-none d-md-block">
                 <div class="ml-3 d-inline-block">
-                    <a href="#" class="menu-item-expanded" style="font-size: 2.75rem;"><i class="fa fa-shopping-cart"></i></a>
+                    <a href="#" class="menu-item-expanded"><i class="fa fa-shopping-cart"></i></a>
                 </div>
                 <div class="ml-3 d-inline-block">
-                    <a href="#" class="menu-item-expanded"><i class="fa fa-sm fa-heart"></i></a>
+                    <a href="#" class="menu-item-expanded"><i class="fa fa-heart"></i></a>
                 </div>
                 <div class="ml-3 d-inline-block">
                     <a href="#" class="menu-item-expanded"><i class="fa fa-user-circle"></i></a>
@@ -88,20 +89,95 @@
                     <a href="#" class="menu-item-collapsed"><i class="fa fa-shopping-cart"></i><span> Shopping cart</span></a>
                 </div>
                 <div class="d-block my-2">
-                    <a href="#" class="menu-item-collapsed"><i class="fa fa-sm fa-heart"></i><span> Wish list</span></a>
+                    <a href="#" class="menu-item-collapsed p-1"><i class="fa fa fa-heart"></i><span> Wish list</span></a>
                 </div>
                 <div class="d-block my-2">
-                    <a href="#" class="menu-item-collapsed"><i class="fa fa-user-circle"></i><span> Account</span></a>
+                    <a href="#" class="menu-item-collapsed p-1"><i class="fa fa-user-circle"></i><span> Account</span></a>
                 </div>
             </div>
         </div>
     </nav>
     </header>
     <div class="main-body">
+        <div class="w-100 position-relative">
+            <img src="images/main1.jpg" alt="Books" class="img-fluid">
+            <div class="row position-absolute w-100 h-100 image-text">
+                <div class="align-self-center mx-auto user-select-none">Welcome to our bookstore!</div>
+            </div>
+        </div>
+        <div class="w-100" style="height: 500px">
 
+        </div>
     </div>
-    <footer>
-        
+    <footer class="w-100 site-footer pb-4">
+        <div class="col-xl-9 col-lg-10 col-sm-10 col-10 row h-100 px-0 mx-auto pt-4 footer-content">
+            <div class="col-lg-4 col-md-6 social-media-block p-0" style="background-color: #222">
+                <div class="primary-text logo ml-3 mb-4">
+                    Bookstore
+                </div>
+                <div class="primary-text ml-3 social-media">
+                    Follow us on social media:
+                </div>
+                <ul class="list-inline ml-2 mt-1 mr-2">
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com/vdzhos/" title="instagram" target="_blank" class="fab fa-instagram primary-text text-decoration-none"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/volodymyr.dgosan/" title="facebook" target="_blank" class="fab fa-facebook-f primary-text text-decoration-none"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://t.me/vdzhos/" title="telegram" target="_blank" class="fab fa-telegram-plane primary-text text-decoration-none"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://twitter.com/" title="twitter" target="_blank" class="fab fa-twitter primary-text text-decoration-none"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.youtube.com/channel/UCVJW-fVH_2J4Il9blLFozSw/" title="youtube" target="_blank" class="fab fa-youtube primary-text text-decoration-none"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 d-lg-block d-none info-block" style="background-color: #222">
+                <ul class="list-unstyled pl-5 info-list">
+                    <li>
+                        <a href="#" title="about us">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#" title="delivery">Shipping and Delivery</a>
+                    </li>
+                    <li>
+                        <a href="#" title="payment">Payment Options</a>
+                    </li>
+                    <li>
+                        <a href="#" title="returns">Returns</a>
+                    </li>
+                    <li>
+                        <a href="#" title="loyalty program">Loyalty Program</a>
+                    </li>
+                    <li>
+                        <a href="#" title="contact us">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 contacts-block" style="background-color: #222">
+                <ul class="list-unstyled pl-lg-5 pl-md-4 contacts-list">
+                    <li>
+                        <div class="d-inline-block"><span class="fas fa-phone-alt"></span> &ensp;(097) 019 90 40</div>
+                    </li>
+                    <li>
+                        <div class="d-inline-block"><span class="fas fa-phone-alt"></span> &ensp;(050) 123 45 67</div>
+                    </li>
+                    <li>
+                        <div class="d-inline-block"><span class="fas fa-phone-alt"></span> &ensp;(063) 987 65 43 </div>
+                    </li>
+                    <li>
+                        <div class="d-inline-block"><span class="fas fa-envelope"></span> &ensp;dgosan37@gmail.com</div>
+                    </li>
+                    <li>
+                        <div class="d-inline-block"><span class="fas fa-map-marked-alt"></span> &ensp;Kyiv, Hryhoriya Skovorody St, 2</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
