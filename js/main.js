@@ -15,3 +15,20 @@ mainSearch.addEventListener("blur",function () {
     mainSearchIcon.style.backgroundColor = "#ED4A43";
     mainSearchIcon.style.color = "#fff";
 })
+
+$('.carousel .carousel-item').each(function(){
+    var minPerSlide = 6;
+    var next = $(this).next();
+    if (!next.length) {
+        next = $(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+
+    for (var i=0;i<minPerSlide;i++) {
+        next=next.next();
+        if (!next.length) {
+            next = $(this).siblings(':first');
+        }
+        next.children(':first-child').clone().appendTo($(this));
+    }
+});

@@ -14,6 +14,10 @@
     color: #22766E;
 }
 
+.white-background{
+    background-color: #FFFFFF;
+}
+
 .navbar .navbar-brand{
     color: #fff;
 }
@@ -142,4 +146,171 @@
     color: #ED4A43;
 }
 
+.carousel-container{
+    background-color: #ED4A43;
+    border-radius: 30px;
+    width: 1440px;
+}
 
+.carousel-btn{
+    font-size: 3rem;
+    line-height: 3rem;
+    color: #FFFFFF;
+}
+
+.carousel-btn:hover{
+    color: #eee;
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-inner .carousel-item-right.active,
+.carousel-inner .carousel-item-next {
+    transform: translateX(16.666667%);
+}
+
+.carousel-inner .carousel-item-left.active,
+.carousel-inner .carousel-item-prev {
+    transform: translateX(-16.666667%);
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{
+    transform: translateX(0);
+}
+
+.card-footer .card-cart {
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+    padding: 0;
+    color: #22766E;
+}
+
+.card-footer .card-cart:hover{
+    color: #134340;
+}
+
+.card-footer .card-price{
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+}
+
+.carousel-width {
+    width: 75%;
+}
+
+.cards-on-carousel{
+    min-width: 200px;
+}
+
+.book-card, .book-card .card-footer{
+    border-radius: 10px;
+}
+
+@media (max-width: 1520px) {
+    .carousel-container{
+        width: 95%;
+    }
+    .cards-on-carousel{
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+        left: 10%;
+    }
+
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(20%);
+    }
+
+    .carousel-inner .carousel-item-left.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-20%);
+    }
+
+    .carousel-inner .carousel-item-right,
+    .carousel-inner .carousel-item-left{
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 1240px) {
+
+    .cards-on-carousel{
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+        left: 25%;
+    }
+
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-left.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+
+    .carousel-inner .carousel-item-right,
+    .carousel-inner .carousel-item-left{
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 1015px) {
+
+    .cards-on-carousel{
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+        left: 50%;
+    }
+
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(33.333333%);
+    }
+
+    .carousel-inner .carousel-item-left.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-33.333333%);
+    }
+
+    .carousel-inner .carousel-item-right,
+    .carousel-inner .carousel-item-left{
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 820px) {
+
+    .cards-on-carousel{
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        left: 100%;
+        min-width: 180px;
+    }
+
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(50%);
+    }
+
+    .carousel-inner .carousel-item-left.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-50%);
+    }
+
+    .carousel-inner .carousel-item-right,
+    .carousel-inner .carousel-item-left{
+        transform: translateX(0);
+    }
+}
