@@ -19,11 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="043f71b5-df44-46c0-aba5-f71a98695f88" name="Default Changelist" comment="Upgrade the navbar and add the site footer">
+    <list default="true" id="043f71b5-df44-46c0-aba5-f71a98695f88" name="Default Changelist" comment="Add the carousel">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +57,11 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programming workspaces\Web\Bookstore\fonts" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -84,7 +88,7 @@
       <workItem from="1604314671372" duration="4621000" />
       <workItem from="1604604605634" duration="6838000" />
       <workItem from="1604751982493" duration="23936000" />
-      <workItem from="1604923069567" duration="6991000" />
+      <workItem from="1604923069567" duration="15353000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit 2 (main files created)">
       <created>1603361144714</created>
@@ -114,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604268898427</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add the carousel">
+      <created>1604933825370</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604933825370</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,17 +148,18 @@
     <MESSAGE value="Add the demo version of navbar (expanded)." />
     <MESSAGE value="Add the collapsed look of the navbar" />
     <MESSAGE value="Upgrade the navbar and add the site footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Upgrade the navbar and add the site footer" />
+    <MESSAGE value="Add the carousel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add the carousel" />
   </component>
   <component name="WindowStateProjectService">
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1603473131841">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603473131841" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1604268936209">
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1604933833283">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604268936209" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604933833283" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604189722148">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

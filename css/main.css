@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Site Title";
+    src: url("../fonts/SCRIPTBL.TTF") format("truetype");
+}
+
 .primary-bg{
     background-color: #ED4A43;
 }
@@ -59,9 +64,10 @@
 .image-text{
     top: 0;
     font-weight: bold;
-    font-size: 6vw;
+    font-size: 4vw;
     text-align: center;
-
+    font-family: 'Site Title';
+    color: #FFFFFF;
 }
 
 .logo {
@@ -148,8 +154,19 @@
 
 .carousel-container{
     background-color: #ED4A43;
-    border-radius: 30px;
+    border-radius: 0 30px 30px 30px;
     width: 1440px;
+    margin-top: 100px;
+}
+
+.carousel-title{
+    height: 60px;
+    border-radius: 50px 50px 50px 0;
+    z-index: 1;
+    top: -50px;
+    left: 0;
+    font-size: 2em;
+    box-shadow: 3px 5px 8px 0 #373737;
 }
 
 .carousel-btn{
