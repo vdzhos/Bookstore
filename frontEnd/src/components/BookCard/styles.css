@@ -1,0 +1,26 @@
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+    justify-content: center;
+}
+
+.cards-on-carousel {
+    min-width: 200px;
+}
+
+.book-card {
+    border-radius: 10px;
+}
+
+.card-price {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+}
+
+.card-cart {
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+    padding: 0;
+    color: #22766E;
+}

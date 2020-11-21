@@ -16,10 +16,28 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/develop" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="043f71b5-df44-46c0-aba5-f71a98695f88" name="Default Changelist" comment="Update the banner" />
+    <list default="true" id="043f71b5-df44-46c0-aba5-f71a98695f88" name="Default Changelist" comment="Update the banner">
+      <change beforePath="$PROJECT_DIR$/.idea/Bookstore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Bookstore.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SCRIPTBL.TTF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/main.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/main1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/main4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,14 +67,30 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Registration" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../eatngo" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Users\danil\Desktop\Bookstore\frontEnd\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\danil\Desktop\Bookstore\frontEnd" />
+      <recent name="C:\Users\danil\Desktop\Bookstore\backEnd" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Programming workspaces\Web\Bookstore\fonts" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Bookstore/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -157,10 +191,27 @@
     <option name="LAST_COMMIT_MESSAGE" value="Update the banner" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1603473131841">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1605983480013">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1605983480013" />
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603473131841" />
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1605980675603">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1605980675603" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1605980675603">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1605980675603" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1605980675603">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1605980675603" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1605980675603">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1605980675603" />
     <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1604998865448">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -169,9 +220,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604189722148" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1604268864367">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1605982364275">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1605982364275" />
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604268864367" />
   </component>
 </project>

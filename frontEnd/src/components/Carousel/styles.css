@@ -1,0 +1,29 @@
+button.rec-dot {
+    display: none;
+}
+
+.carousel-container {
+    background-color: #ED4A43;
+    border-radius: 0 30px 30px 30px;
+    width: 1440px;
+    margin-top: 100px;
+    width: 90%;
+}
+
+.carousel-title {
+    height: 60px;
+    border-radius: 50px 50px 50px 0;
+    z-index: 1;
+    top: -50px;
+    left: 0;
+    font-size: 2em;
+    box-shadow: 3px 5px 8px 0 #373737;
+}
+
+.primary-text {
+    color: #fff;
+}
+
+.secondary-bg {
+    background-color: #22766E;
+}
