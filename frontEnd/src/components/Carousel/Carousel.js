@@ -17,7 +17,7 @@ export default (props) => {
   console.log(history, "history");
  
   return ( 
-    <div className="carousel-container mx-auto py-2 my-5">
+    <div className="carousel-container mx-auto pt-1 my-6">
       
     <div className="position-relative">
         <div className="carousel-title position-absolute primary-text secondary-bg font-weight-bold d-flex align-items-center pl-3 pr-5">

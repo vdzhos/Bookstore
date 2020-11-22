@@ -17,9 +17,9 @@ export const Header: React.FC = () => {
   console.log(history, "history");
 
   return (
-    <div>
+    <div> 
       <Navbar id = "nav-bar" variant = "dark" className = "primary-bg primary-text" sticky = "top" expand="lg">
-        <Navbar.Brand className = "primary-text nav-brend-font ">B</Navbar.Brand>
+        <Navbar.Brand onClick={() => history.push("/")} className = "primary-text nav-brend-font ">B</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">

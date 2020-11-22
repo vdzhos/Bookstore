@@ -24,6 +24,8 @@ export const Home: React.FC = () => {
                 </div>
             </div>
             <Carousel books={booksList}/>
+            <Carousel books={booksList}/>
+            <Carousel books={booksList}/>
         </div>
     );
 };
