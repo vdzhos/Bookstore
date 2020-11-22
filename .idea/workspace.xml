@@ -27,16 +27,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="043f71b5-df44-46c0-aba5-f71a98695f88" name="Default Changelist" comment="Update the banner">
-      <change beforePath="$PROJECT_DIR$/.idea/Bookstore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Bookstore.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/SCRIPTBL.TTF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/main.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/main1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/main4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/src/components/Header/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/Header/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/src/components/Header/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/Header/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/src/components/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/Home/Home.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +44,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="TypeScript JSX File" />
+        <option value="CSS File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -67,7 +66,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../eatngo" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Telegram Desktop/Bookstore" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Users\danil\Desktop\Bookstore\frontEnd\node_modules\typescript\lib" />
@@ -120,6 +119,7 @@
       <workItem from="1604751982493" duration="23936000" />
       <workItem from="1604923069567" duration="15353000" />
       <workItem from="1604998772166" duration="107000" />
+      <workItem from="1606065437507" duration="7063000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit 2 (main files created)">
       <created>1603361144714</created>
@@ -163,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604998857873</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Initial commit for react-based app.">
+      <created>1605984075870</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1605984075870</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,33 +195,35 @@
     <MESSAGE value="Upgrade the navbar and add the site footer" />
     <MESSAGE value="Add the carousel" />
     <MESSAGE value="Update the banner" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update the banner" />
+    <MESSAGE value="Initial commit for react-based app." />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit for react-based app." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1605983480013">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1606071046481">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1605983480013" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1606071046481" />
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603473131841" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1605980675603">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1605984107407">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1605980675603" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1605980675603">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1605984107407" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1605984107406">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1605980675603" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1605980675603">
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1605984107406" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1605984107406">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1605980675603" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1605980675603">
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1605984107406" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1605984107407">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1605980675603" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1604998865448">
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1605984107407" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1605984082181">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1605984082181" />
     <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604998865448" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604189722148">
       <screen x="0" y="0" width="1920" height="1040" />

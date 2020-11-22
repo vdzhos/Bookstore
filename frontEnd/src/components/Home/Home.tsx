@@ -3,16 +3,17 @@ import axios from 'axios';
 import Header from "../Header";
 import Carousel from "../Carousel";
 import Img from "../../assets/booksCanvas.jpg";
+import Footer from "../Footer";
 
 export const Home: React.FC = () => {
-    const [booksList, setBooksList] = useState([]);
-    try {
-        axios
-            .get('http://localhost:3001/books')
-            .then(response => (setBooksList(response.data)));
-    } catch {
-        console.log("some err");
-    }
+    // const [booksList, setBooksList] = useState([]);
+    // try {
+    //     axios
+    //         .get('http://localhost:3001/books')
+    //         .then(response => (setBooksList(response.data)));
+    // } catch {
+    //     console.log("some err");
+    // }
 
     return (
         <div>
@@ -23,7 +24,8 @@ export const Home: React.FC = () => {
                     <div className="align-self-center mx-auto user-select-none">Welcome to our bookstore!</div>
                 </div>
             </div>
-            <Carousel books={booksList}/>
+            {/*<Carousel books={booksList}/>*/}
+            <Footer/>
         </div>
     );
 };
