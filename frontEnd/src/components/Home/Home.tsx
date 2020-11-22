@@ -3,6 +3,7 @@ import axios from 'axios';
 import Header from "../Header";
 import Carousel from "../Carousel";
 import Img from "../../assets/booksCanvas.jpg";
+import Footer from "../Footer";
 
 export const Home: React.FC = () => {
     const [booksList, setBooksList] = useState([]);
@@ -26,6 +27,8 @@ export const Home: React.FC = () => {
             <Carousel books={booksList}/>
             <Carousel books={booksList}/>
             <Carousel books={booksList}/>
+            {/*<Carousel books={booksList}/>*/}
+            <Footer/>
         </div>
     );
 };

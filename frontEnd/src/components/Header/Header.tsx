@@ -14,22 +14,20 @@ import "./styles.css";
 export const Header: React.FC = () => {
   let history = useHistory();
 
-  console.log(history, "history");
-
   return (
-    <div> 
-      <Navbar id = "nav-bar" variant = "dark" className = "primary-bg primary-text" sticky = "top" expand="lg">
-        <Navbar.Brand onClick={() => history.push("/")} className = "primary-text nav-brend-font ">B</Navbar.Brand>
+    <div>
+      <Navbar id = "nav-bar" /*variant = "light" className = "primary-bg primary-text"*/ sticky = "top" expand="lg">
+        <Navbar.Brand id = "brand" className = "nav-brand-font">B</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav className = "mx-3" onClick={() => history.push("/books")}>Books</Nav>
-            <Nav className = "mx-3" onClick={() => history.push("/genres")}>Genres</Nav>
+            <Nav.Link id = "nav-link1" className = "mx-3" onClick={() => history.push("/books")}>Books</Nav.Link>
+            <Nav.Link id = "nav-link2" className = "mx-3" onClick={() => history.push("/genres")}>Genres</Nav.Link>
           </Nav>
           <Form inline>
-            <FormControl type="text" placeholder="Search" className="mr-sm-2" >
+            <FormControl id = "searchText" type="text" placeholder="Search" className="mr-sm-2" >
             </FormControl>
-            <Button className="bg-light"><FontAwesomeIcon className="pink-color" icon={faSearch} size="lg" /></Button>
+            <Button className="bg-light"><FontAwesomeIcon id = "searchBtn" icon={faSearch} size="lg" /></Button>
           </Form>
         </Navbar.Collapse>
       </Navbar>
