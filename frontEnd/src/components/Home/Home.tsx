@@ -24,9 +24,9 @@ export const Home: React.FC = () => {
                     <div className="align-self-center mx-auto user-select-none">Welcome to our bookstore!</div>
                 </div>
             </div>
-            <Carousel books={booksList}/>
-            <Carousel books={booksList}/>
-            <Carousel books={booksList}/>
+             <Carousel books={booksList}/> 
+            {/* <Carousel books={booksList}/> */}
+            {/* <Carousel books={booksList}/> */}
             {/*<Carousel books={booksList}/>*/}
             <Footer/>
         </div>

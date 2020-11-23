@@ -1,4 +1,6 @@
 import React from "react";
+import {useForm} from "react-hook-form"
+import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch} from '@fortawesome/free-solid-svg-icons';
 import {
@@ -11,12 +13,32 @@ import {
 import { useHistory } from "react-router-dom";
 import "./styles.css";
 
+type FormData = {
+  input: string;
+};
+
+const books = [
+  {title: "o",
+  id: 1}
+]
+
 export const Header: React.FC = () => {
   let history = useHistory();
+  const {register, handleSubmit} = useForm<FormData>();
+
+  const onSubmit = handleSubmit(({ input }) => {
+    console.log(input);
+    let id = books.find((o: { title: string; }) => o.title === input)?.id;
+    if(id)
+    history.push("/books/" + id);
+    else{
+      history.push("/books")
+    }
+  });
 
   return (
     <div>
-      <Navbar id = "nav-bar" /*variant = "light" className = "primary-bg primary-text"*/ sticky = "top" expand="lg">
+      <Navbar id = "nav-bar" sticky = "top" expand="lg">
         <Navbar.Brand id = "brand" className = "nav-brand-font">B</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -24,10 +46,10 @@ export const Header: React.FC = () => {
             <Nav.Link id = "nav-link1" className = "mx-3" onClick={() => history.push("/books")}>Books</Nav.Link>
             <Nav.Link id = "nav-link2" className = "mx-3" onClick={() => history.push("/genres")}>Genres</Nav.Link>
           </Nav>
-          <Form inline>
-            <FormControl id = "searchText" type="text" placeholder="Search" className="mr-sm-2" >
+          <Form inline onSubmit = {onSubmit}>
+            <FormControl name = "input" ref = {register} id = "searchText" type="text"  placeholder="Search" className="mr-sm-2" >
             </FormControl>
-            <Button className="bg-light"><FontAwesomeIcon id = "searchBtn" icon={faSearch} size="lg" /></Button>
+            <Button type = "submit" className="bg-light"><FontAwesomeIcon id = "searchBtn" icon={faSearch} size="lg" /></Button>
           </Form>
         </Navbar.Collapse>
       </Navbar>
