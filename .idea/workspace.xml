@@ -26,14 +26,15 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="043f71b5-df44-46c0-aba5-f71a98695f88" name="Default Changelist" comment="Update the banner">
+    <list default="true" id="043f71b5-df44-46c0-aba5-f71a98695f88" name="Default Changelist" comment="Navbar working on react.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/src/components/BookCard/BookCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/BookCard/BookCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/src/components/BookCard/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/BookCard/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/src/components/Carousel/Carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/Carousel/Carousel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/src/components/Carousel/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/Carousel/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontEnd/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/Header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/components/Header/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/Header/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/components/Header/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/Header/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontEnd/src/components/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/Home/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/src/routerConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/routerConfig.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +46,8 @@
       <list>
         <option value="HTML File" />
         <option value="JavaScript File" />
-        <option value="TypeScript JSX File" />
         <option value="CSS File" />
+        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
       </list>
     </option>
@@ -120,6 +121,8 @@
       <workItem from="1604923069567" duration="15353000" />
       <workItem from="1604998772166" duration="107000" />
       <workItem from="1606065437507" duration="7063000" />
+      <workItem from="1606075155671" duration="66000" />
+      <workItem from="1606124136808" duration="4836000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit 2 (main files created)">
       <created>1603361144714</created>
@@ -170,7 +173,21 @@
       <option name="project" value="LOCAL" />
       <updated>1605984075870</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Navbar working on react.">
+      <created>1606075189995</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1606075189995</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Navbar working on react.">
+      <created>1606075203314</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1606075203314</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,7 +198,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/develop" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -196,7 +225,8 @@
     <MESSAGE value="Add the carousel" />
     <MESSAGE value="Update the banner" />
     <MESSAGE value="Initial commit for react-based app." />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit for react-based app." />
+    <MESSAGE value="Navbar working on react." />
+    <option name="LAST_COMMIT_MESSAGE" value="Navbar working on react." />
   </component>
   <component name="WindowStateProjectService">
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1606071046481">
@@ -204,30 +234,31 @@
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1606071046481" />
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603473131841" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1605984107407">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1606124163942">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1605984107407" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1605984107406">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1606124163942" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1606124163942">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1605984107406" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1605984107406">
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1606124163942" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1606124163942">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1605984107406" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1605984107407">
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1606124163942" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1606124163942">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1605984107407" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1605984082181">
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1606124163942" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1606075204384">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1605984082181" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1606075204384" />
     <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604998865448" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604189722148">
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606124141874">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1606124141874" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604189722148" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1605982364275">
       <screen x="0" y="0" width="1920" height="1040" />
