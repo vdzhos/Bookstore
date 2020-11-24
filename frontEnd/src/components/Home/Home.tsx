@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import axios from 'axios';
 import Header from "../Header";
 import Carousel from "../Carousel";
@@ -7,13 +7,16 @@ import Footer from "../Footer";
 
 export const Home: React.FC = () => {
     const [booksList, setBooksList] = useState([]);
-    try {
+    useEffect(() => { 
+        try {
         axios
             .get('http://localhost:3001/books')
             .then(response => (setBooksList(response.data)));
     } catch {
         console.log("some err");
     }
+    },[])
+    
 
     return (
         <div>

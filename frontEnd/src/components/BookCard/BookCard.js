@@ -16,8 +16,8 @@ export default (props) => {
                 </div>
 
                 <Card.Body>
-                    <Card.Title className="font-weight-bold m-1 text-center">{props.book.title.substring(0, 20)}</Card.Title>
-                    <Card.Text className="m-1 text-center">TODO: AddAuthor</Card.Text>
+                    <Card.Title className="font-weight-bold m-1 text-center">{props.book.title.substring(0, 15)}</Card.Title>
+                    <Card.Text className="m-1 text-center h6">{props.book.authors[0].substring(0, 15)}</Card.Text>
                     <Card.Text className="font-weight-bold m-1 text-center card-price">{props.book.price + "$"}</Card.Text>
                 </Card.Body>
 

@@ -11,6 +11,11 @@
 
 .book-card {
     border-radius: 10px;
+    height: 23em;
+}
+
+.book-card:hover {
+    cursor: pointer;
 }
 
 .card-price {

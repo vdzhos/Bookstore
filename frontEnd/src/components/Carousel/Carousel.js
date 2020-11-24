@@ -24,10 +24,11 @@ export default (props) => {
           Best Sellers of {new Date().getFullYear()}
             </div>
       </div>
-
+      <div className = "card-deck">
       <Carousel enableTilt = {false} className="pt-4" breakPoints={breakPoints}>
         {props.books.map(book => (<BookCard book={book} />))}
       </Carousel>
+      </div>
     </div>
   );
 };
