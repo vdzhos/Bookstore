@@ -1,28 +1,28 @@
-import React, { useState } from "react";
-import { Row, Container, Dropdown } from "react-bootstrap";
+import React from "react";
+import { Row } from "react-bootstrap";
 import "./styles.css"
-import { useHistory } from "react-router-dom";
-import Header from "../Header";
-import Footer from "../Footer";
 import BookCard from "../BookCard";
-
-const NUM_OF_ROWS = 10;
-const NUM_OF_COLS = 4;
+import Loader from 'react-loader-spinner'
 
 export const BooksGrid = (props) => {
 
     return (
-        <Container>
-       <Row >sac</Row>
-       <Row >sac</Row>
-       <Row >sac</Row>
-       <Row >sac</Row>
-       <Row >sac</Row>
-       <Row >sac</Row>
-       <Row >sac</Row>
-       <Row >sac</Row>
-       <Row >sac</Row>
-       <Row >sac</Row>
-       </Container>
+        <div className="my-5">
+
+            <Row id = "row" className="justify-content-center my-5" >
+                {!props.booksList && 
+                    <Loader
+                    type="ThreeDots"
+                    color="#22766E"
+                    height={100}
+                    width={100}
+                    timeout={3000}
+                 />}
+                {props.booksList && (
+                    props.booksList.map((book) => <BookCard book={book} />)
+                         ) }
+            </Row>
+
+        </div>
     );
 };

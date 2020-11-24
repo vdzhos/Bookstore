@@ -1,25 +1,3 @@
-/*
-.primary-bg {
-    background-color: #ED4A43;
-}
-
-.pink-color {
-    color: #ED4A43;
-}
-
-#nav-bar {
-    color: #fff;
-    font-size: 1.5rem;
-}
-
-.primary-text {
-    color: #fff;
-}
-
-.nav-brend-font {
-    font-size: 2rem;
-    font-style: bold;
-}*/
 #nav-bar {
     background-color: #ED4A43;
     color: white;
@@ -32,7 +10,7 @@
     font-weight: bold;
 }
 
-#brand:hover{
+#brand:hover {
     cursor: pointer;
     color: lightgrey;
 }
@@ -53,23 +31,25 @@
     color: lightgrey;
 }
 
-#searchText::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+#searchText::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: white;
-    opacity: 1; /* Firefox */
+    opacity: 1;
+    /* Firefox */
 }
 
-#searchText{
+#searchText {
     border: white solid 2px;
     background-color: #ED4A43;
     color: white;
 }
 
-#searchText:focus{
+#searchText:focus {
     background-color: white;
     color: #ED4A43;
     width: 300px;
 }
 
-#searchBtn{
+#searchBtn {
     color: #ED4A43;
 }
