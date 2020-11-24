@@ -11,18 +11,18 @@ button.rec-dot {
 }
 
 .rec.rec-arrow {
-    background-color: #373737 !important;
+    background-color: white !important;
     color: #ED4A43 !important;
 }
 
 .rec.rec-arrow:hover {
-    background-color: #373737 !important;
+    background-color: lightgrey !important;
     color: #ED4A43 !important;
 }
 
 .rec.rec-arrow:focus {
     outline: none;
-    background-color: #373737 !important;
+    background-color: white !important;
     color: #ED4A43 !important;
 }
 

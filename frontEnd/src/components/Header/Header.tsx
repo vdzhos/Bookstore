@@ -39,7 +39,7 @@ export const Header: React.FC = () => {
   return (
     <div>
       <Navbar id = "nav-bar" sticky = "top" expand="lg">
-        <Navbar.Brand id = "brand" className = "nav-brand-font">B</Navbar.Brand>
+        <Navbar.Brand id = "brand" className = "nav-brand-font" onClick={() => history.push("/")}>B</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">

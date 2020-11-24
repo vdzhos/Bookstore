@@ -1,22 +1,31 @@
+<<<<<<< HEAD
 import React, {useEffect, useState} from "react";
+=======
+import React, {useState, useEffect} from "react";
+>>>>>>> b0c96302945297a68b2ed86d45839a69d5cb9230
 import axios from 'axios';
 import Header from "../Header";
-import Carousel from "../Carousel";
+import {CustomCarousel} from "../Carousel/CustomCarousel";
 import Img from "../../assets/booksCanvas.jpg";
 import Footer from "../Footer";
+import {BookResponse, getAllBooks} from "../../API/books";
 
 export const Home: React.FC = () => {
-    const [booksList, setBooksList] = useState([]);
-    useEffect(() => { 
-        try {
-        axios
-            .get('http://localhost:3001/books')
-            .then(response => (setBooksList(response.data)));
-    } catch {
-        console.log("some err");
-    }
-    },[])
-    
+    const [booksList, setBooksList] = useState<BookResponse[] | undefined>(undefined);
+
+    useEffect(() => {
+        (async () => {
+            try {
+                const response = await getAllBooks();
+                if (response){
+                    setBooksList(response);
+                    console.log(response, "response");
+                }
+            } catch {
+                console.log("some err");
+            }
+        })();
+    }, [])
 
     return (
         <div>
@@ -27,10 +36,12 @@ export const Home: React.FC = () => {
                     <div className="align-self-center mx-auto user-select-none">Welcome to our bookstore!</div>
                 </div>
             </div>
-             <Carousel books={booksList}/> 
-            {/* <Carousel books={booksList}/> */}
-            {/* <Carousel books={booksList}/> */}
-            {/*<Carousel books={booksList}/>*/}
+            {booksList && booksList.length > 0 ? (
+                <>
+
+                    <CustomCarousel books={booksList}/>
+                </>
+            ) : null}
             <Footer/>
         </div>
     );
