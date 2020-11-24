@@ -6,7 +6,7 @@ import Img from "../../assets/booksCanvas.jpg";
 import Footer from "../Footer";
 import { BookResponse, getAllBooks } from "../../API/books";
 import Loader from 'react-loader-spinner'
-import { Container, Row } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 
 export const Home: React.FC = () => {
     const [booksList, setBooksList] = useState<BookResponse[] | undefined>(undefined);
@@ -38,7 +38,7 @@ export const Home: React.FC = () => {
 
             {booksList && booksList.length > 0 ? (
                 <>
-                    <CustomCarousel books={booksList} />
+                    <CustomCarousel title = {"Best sellers of " + new Date().getFullYear()} books={booksList} />
                 </>
             ) : (<Row className="justify-content-center my-5" >
                 <Loader

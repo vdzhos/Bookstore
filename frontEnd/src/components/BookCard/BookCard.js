@@ -12,7 +12,7 @@ export default (props) => {
     let history = useHistory();
     return (
         <div key={props.book.id}>
-            <Card onClick={() => history.push("/books/" + props.book.id, props.book)} className="book-card mx-3 mb-0">
+            <Card onClick={() => history.push("/books/" + props.book.id, props.book)} className="book-card mx-3">
                 <div className="pt-3">
                     <Card.Img className="card-img-top" variant="top" src={props.book.image} />
                 </div>

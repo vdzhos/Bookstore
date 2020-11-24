@@ -12,10 +12,11 @@ const breakPoints = [
 ];
 
 interface CustomCarouselProps {
-    books: BookResponse[];
+    books: BookResponse[],
+    title: string
 }
 
-export const CustomCarousel: React.FC<CustomCarouselProps> = ({books}) => {
+export const CustomCarousel: React.FC<CustomCarouselProps> = ({books, title}) => {
     return (
         <div>
            
@@ -26,7 +27,7 @@ export const CustomCarousel: React.FC<CustomCarouselProps> = ({books}) => {
                             <div className="position-relative">
                                 <div
                                     className="carousel-title position-absolute primary-text secondary-bg font-weight-bold d-flex align-items-center px-4">
-                                    Best Sellers of {new Date().getFullYear()}
+                                    {title}
                                 </div>
                             </div>
                             <Carousel enableTilt={false} className="pt-4" breakPoints={breakPoints}>
