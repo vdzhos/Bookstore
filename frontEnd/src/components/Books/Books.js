@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect} from "react";
 import axios from "axios";
-import { Container } from "react-bootstrap";
-import { useHistory } from "react-router-dom";
+import {Container} from "react-bootstrap";
+import {useHistory} from "react-router-dom";
 import NavigationPanel from "../NavigationPanel"
 import BooksGrid from "../BooksGrid"
 import Header from "../Header";
 import Footer from "../Footer";
-import { BookResponse, getAllBooks } from "../../API/books";
+import {BookResponse, getAllBooks} from "../../API/books";
 
 export const Books = (props) => {
     let history = useHistory();
@@ -22,7 +22,9 @@ export const Books = (props) => {
 
     const sortByName = () => {
         console.log(booksList);
-        setBooksList(booksList.sort((book1, book2) => {if(book2.title < book1.title)return 1;else return -1}));
+        setBooksList(booksList.sort((book1, book2) => {
+            if (book2.title < book1.title) return 1; else return -1
+        }));
     }
 
     useEffect(() => {
@@ -39,14 +41,15 @@ export const Books = (props) => {
 
     return (
         <div>
-            <Header />
-            <div className="my-5" >
-                <NavigationPanel name={"Books"} sortByName = {sortByName} sortByPriceFromHigh = {sortByPriceFromHigh} sortByPriceFromLow = {sortByPriceFromLow}/>
-                {<BooksGrid booksList={booksList} />/**/}
+            <Header/>
+            <div className="my-5">
+                <NavigationPanel name={"Books"} sortByName={sortByName} sortByPriceFromHigh={sortByPriceFromHigh}
+                                 sortByPriceFromLow={sortByPriceFromLow}/>
+                {<BooksGrid booksList={booksList}/>/**/}
                 {/*map => Books Grid*/}
                 {/*View More button*/}
             </div>
-            <Footer />
+            <Footer/>
         </div>
     );
 };

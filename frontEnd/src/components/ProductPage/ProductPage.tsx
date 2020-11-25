@@ -23,7 +23,8 @@ export const ProductPage = () => {
                     <Card.Text className="m-1 text-center">TODO: AddAuthor</Card.Text>
                     <Card.Text id="priceAndBuyRow" className="font-weight-bold m-1 text-center card-price px-3">
                         <span id="price">{location.state.price + "$"}</span>
-                        <a onClick={() => sessionStorage.setItem("addItem", JSON.stringify(location.state))}><FontAwesomeIcon id="cartIcon" icon={faShoppingCart}/></a>
+                        <a onClick={() => sessionStorage.setItem("addItem", JSON.stringify(location.state))}><FontAwesomeIcon
+                            id="cartIcon" icon={faShoppingCart}/></a>
                     </Card.Text>
                 </Card.Body>
             </Card>
