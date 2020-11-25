@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React from "react";
 import Carousel from "react-elastic-carousel";
 import BookCard from "../BookCard"
 import "./styles.css";
@@ -12,23 +12,31 @@ const breakPoints = [
 ];
 
 interface CustomCarouselProps {
-    books: BookResponse[];
+    books: BookResponse[],
+    title: string
 }
 
-export const CustomCarousel: React.FC<CustomCarouselProps> = ({books}) => {
+export const CustomCarousel: React.FC<CustomCarouselProps> = ({books, title}) => {
     return (
         <div>
-            <div className="carousel-container mx-auto pt-1 mt-6">
-                <div className="position-relative">
-                    <div
-                        className="carousel-title position-absolute primary-text secondary-bg font-weight-bold d-flex align-items-center px-4">
-                        Best Sellers of {new Date().getFullYear()}
-                    </div>
-                </div>
-                <Carousel enableTilt={false} className="mt-4 mb-5 pb-3" breakPoints={breakPoints}>
-                    {books.map(book => (<BookCard book={book}/>))}
-                </Carousel>
-            </div>
+           
+            {
+                books.length > 0 && (
+                    <>
+                        <div className="carousel-container mx-auto pt-1 my-6">
+                            <div className="position-relative">
+                                <div
+                                    className="carousel-title position-absolute primary-text secondary-bg font-weight-bold d-flex align-items-center px-4">
+                                    {title}
+                                </div>
+                            </div>
+                            <Carousel enableTilt={false} className="pt-4" breakPoints={breakPoints}>
+                                {books.map(book => (<BookCard book={book}/>))}
+                            </Carousel>
+                        </div>
+                    </>
+                )
+            }
         </div>
     );
 };

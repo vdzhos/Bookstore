@@ -1,8 +1,8 @@
 import React from "react";
-import {useHistory} from "react-router-dom";
-import {Card} from "react-bootstrap";
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faShoppingCart} from '@fortawesome/free-solid-svg-icons';
+import { useHistory } from "react-router-dom";
+import { Card } from "react-bootstrap";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart} from '@fortawesome/free-solid-svg-icons';
 import "./styles.css";
 
 export default (props) => {
