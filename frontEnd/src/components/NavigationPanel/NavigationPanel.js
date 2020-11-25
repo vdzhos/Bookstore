@@ -3,7 +3,6 @@ import { Dropdown, Container } from "react-bootstrap";
 import "./styles.css"
 
 export const NavigationPanel = (props) => {
-
     return (
         <Container >
         <div id = "np-container" className = "d-flex">

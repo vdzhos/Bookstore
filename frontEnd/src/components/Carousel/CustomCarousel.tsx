@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Component} from "react";
 import Carousel from "react-elastic-carousel";
 import BookCard from "../BookCard"
 import "./styles.css";
@@ -18,24 +18,17 @@ interface CustomCarouselProps {
 export const CustomCarousel: React.FC<CustomCarouselProps> = ({books}) => {
     return (
         <div>
-           
-            {
-                books.length > 0 && (
-                    <>
-                        <div className="carousel-container mx-auto pt-1 my-6">
-                            <div className="position-relative">
-                                <div
-                                    className="carousel-title position-absolute primary-text secondary-bg font-weight-bold d-flex align-items-center px-4">
-                                    Best Sellers of {new Date().getFullYear()}
-                                </div>
-                            </div>
-                            <Carousel enableTilt={false} className="pt-4" breakPoints={breakPoints}>
-                                {books.map(book => (<BookCard book={book}/>))}
-                            </Carousel>
-                        </div>
-                    </>
-                )
-            }
+            <div className="carousel-container mx-auto pt-1 mt-6">
+                <div className="position-relative">
+                    <div
+                        className="carousel-title position-absolute primary-text secondary-bg font-weight-bold d-flex align-items-center px-4">
+                        Best Sellers of {new Date().getFullYear()}
+                    </div>
+                </div>
+                <Carousel enableTilt={false} className="mt-4 mb-5 pb-3" breakPoints={breakPoints}>
+                    {books.map(book => (<BookCard book={book}/>))}
+                </Carousel>
+            </div>
         </div>
     );
 };
