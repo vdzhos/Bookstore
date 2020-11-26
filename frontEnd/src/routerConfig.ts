@@ -3,6 +3,7 @@ import Books from "./components/Books";
 import Genres from "./components/Genres";
 import Authors from "./components/Authors";
 import ProductPage from "./components/ProductPage";
+import CartPage from "./components/CartPage";
 
 export const routerConfig = [
     {path: "/books", component: Books, exact: true},
@@ -11,5 +12,6 @@ export const routerConfig = [
     {path: "/genres/:id", component: Genres, exact: false},
     {path: "/authors", component: Authors, exact: false},
     {path: "/authors/:id", component: Authors, exact: false},
+    {path: "/cart", component: CartPage, exact: true},
     {path: "/", component: Home, exact: true},
 ];

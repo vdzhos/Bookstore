@@ -15,9 +15,7 @@ export const ProductPage = () => {
         <div>
             <Header/>
             <Card className="book-card mx-3 mb-0">
-                <div className="pt-3 no-gutters">
-                    <Card.Img className="card-img-top" variant="top" src={location.state.image}/>
-                </div>
+                <Card.Img className="card-img-top pt-3 no-gutters" variant="top" src={location.state.image}/>
                 <Card.Body>
                     <Card.Title className="font-weight-bold m-1 text-center">{location.state.title}</Card.Title>
                     <Card.Text className="m-1 text-center">TODO: AddAuthor</Card.Text>

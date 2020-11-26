@@ -1,8 +1,8 @@
 import React from "react";
 import {useForm} from "react-hook-form"
 import axios from 'axios';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch} from '@fortawesome/free-solid-svg-icons';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faSearch, faShoppingCart} from '@fortawesome/free-solid-svg-icons';
 import {
     Navbar,
     Nav,
@@ -10,7 +10,7 @@ import {
     FormControl,
     Button,
 } from "react-bootstrap";
-import { useHistory } from "react-router-dom";
+import {useHistory} from "react-router-dom";
 import "./styles.css";
 
 type FormData = {
@@ -18,8 +18,10 @@ type FormData = {
 };
 
 const books = [
-  {title: "o",
-  id: 1}
+    {
+        title: "o",
+        id: 1
+    }
 ]
 
 export const Header: React.FC = () => {
@@ -43,8 +45,8 @@ export const Header: React.FC = () => {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
                     <Nav.Link id="nav-link1" onClick={() => history.push("/books")}>Books</Nav.Link>
-                    <Nav.Link id="nav-link1" className = "mx-3" onClick={() => history.push("/authors")}>Authors</Nav.Link>
-            <Nav.Link id = "nav-link2" onClick={() => history.push("/genres")}>Genres</Nav.Link>
+                    <Nav.Link id="nav-link1" onClick={() => history.push("/authors")}>Authors</Nav.Link>
+                    <Nav.Link id="nav-link2" onClick={() => history.push("/genres")}>Genres</Nav.Link>
                 </Nav>
                 <Form inline onSubmit={onSubmit}>
                     <FormControl name="input" ref={register} id="searchText" type="text" placeholder="Search"
@@ -52,6 +54,8 @@ export const Header: React.FC = () => {
                     <Button type="submit" className="bg-light">
                         <FontAwesomeIcon id="searchBtn" icon={faSearch} size="lg"/>
                     </Button>
+                    <FontAwesomeIcon onClick={() => history.push("/cart")}
+                                     id="cartIcon" className="ml-3" icon={faShoppingCart}/>
                 </Form>
             </Navbar.Collapse>
         </Navbar>
