@@ -360,9 +360,6 @@ body {
 }
 
 .shopping-cart-summary{
-    background-color: #eeeeee;
-    border: 3px solid #bbbbbb;
-    border-top: 1px solid #cccccc;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
@@ -448,4 +445,13 @@ body {
     line-height: 2.25rem;
     font-size: 1.25rem;
     outline: none;
+}
+
+#continueShoppingA{
+    color: white;
+}
+
+#buttonGoShopping{
+    background-color: #22766E;
+    width: 100%;
 }

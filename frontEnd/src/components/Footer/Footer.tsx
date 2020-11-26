@@ -33,11 +33,11 @@ const Footer = () => (
                                className="fab fa-telegram-plane primary-text text-decoration-none"><FontAwesomeIcon
                                 icon={faTelegram} textDecoration={"none"}/></a>
                         </li>
-                        <li className="list-inline-item">
+                        {/*<li className="list-inline-item">
                             <a href="https://twitter.com/" title="twitter" target="_blank"
                                className="fab fa-twitter primary-text text-decoration-none"><FontAwesomeIcon
                                 icon={faTwitter} textDecoration={"none"}/></a>
-                        </li>
+                        </li>*/}
                     </ul>
                 </div>
                 <div className="col-lg-4 d-lg-block d-none info-block  color-gray">
