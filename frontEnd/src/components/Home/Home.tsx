@@ -14,7 +14,7 @@ export const Home: React.FC = () => {
         <div>
             <Header />
             <div className="w-100 position-relative">
-                <img src={Img} alt="Books" className="img-fluid" />
+                <img src={Img} alt="image" className="img-fluid"/>
                 <div className="row position-absolute w-100 h-100 image-text">
                     <div className="align-self-center mx-auto user-select-none">Welcome to our bookstore!</div>
                 </div>

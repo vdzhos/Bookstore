@@ -21,10 +21,13 @@ app.get("/books", async(req, res) => {
     let bbooks = [];
     books.forEach((book, index) => {
         let author = book.authors[0];
-        let a = authors.find((a) => { if (a.id == author) return true; }).name
-        let g = book.genres.map((g) => genres.find(fg => { if (fg.id == g) return true }).name)
+        let a = authors.find((a) => {
+            if (a.id == author) return true;
+        }).name
+        let g = book.genres.map((g) => genres.find(fg => {
+            if (fg.id == g) return true
+        }).name)
         bbooks.push({ authors: [a], genres: g, title: book.title, id: book._id, image: book.image, price: book.price })
-
     });
     res.json(bbooks);
 });
@@ -38,7 +41,14 @@ app.get("/books/:id", async(req, res) => {
         genres.push(g.name);
         console.log(genres);
     }
-    let foundBook = { genres: genres, authors: [author.name], title: book.title, id: book._id, image: book.image, price: book.price };
+    let foundBook = {
+        genres: genres,
+        authors: [author.name],
+        title: book.title,
+        id: book._id,
+        image: book.image,
+        price: book.price
+    };
     res.json(foundBook);
 });
 
@@ -50,7 +60,9 @@ app.get("/authors", async(req, res) => {
         let author = authors[j];
         let books = [];
         for (let i = 0; i < author.books.length; i++) {
-            let book = allBooks.find((b) => { if (b.id == author.books[i]) return true; });
+            let book = allBooks.find((b) => {
+                if (b.id == author.books[i]) return true;
+            });
             books.push(book);
         }
         authorsRes.push({ name: author.name, id: author.id, books: [books] });

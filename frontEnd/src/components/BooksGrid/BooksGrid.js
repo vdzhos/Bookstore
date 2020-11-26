@@ -29,7 +29,6 @@ export const BooksGrid = (props) => {
                     <FontAwesomeIcon icon={faChevronDown} />
                 </Button>}
             </Row>
-
         </div>
     );
 };

@@ -5,17 +5,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { BooksContext } from "../BooksContext"
 import {
-  Navbar,
-  Nav,
-  Form,
-  FormControl,
-  Button,
+    Navbar,
+    Nav,
+    Form,
+    FormControl,
+    Button,
 } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 import "./styles.css";
 
 type FormData = {
-  input: string;
+    input: string;
 };
 
 export const Header: React.FC = () => {
