@@ -26,11 +26,14 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="043f71b5-df44-46c0-aba5-f71a98695f88" name="Default Changelist" comment="Sack of fixes.">
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/components/BookCard/BookCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/BookCard/BookCard.js" afterDir="false" />
+    <list default="true" id="043f71b5-df44-46c0-aba5-f71a98695f88" name="Default Changelist" comment="Merged with authors.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontEnd/src/components/BookCard/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/BookCard/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/components/Books/Books.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/Books/Books.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/components/NavigationPanel/NavigationPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/NavigationPanel/NavigationPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/src/components/Carousel/CustomCarousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/Carousel/CustomCarousel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/src/components/Header/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/Header/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/src/components/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/Home/Home.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontEnd/src/components/ProductPage/ProductPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/ProductPage/ProductPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontEnd/src/routerConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/routerConfig.ts" afterDir="false" />
     </list>
@@ -43,15 +46,21 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
-        <option value="CSS File" />
         <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1jEEknApPKDb3bX4bOKUrLHYX50" />
   <component name="ProjectLevelVcsManager">
@@ -65,18 +74,21 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Telegram Desktop/Bookstore" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontEnd/src/components/CartPage" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
     <property name="ts.external.directory.path" value="C:\Users\danil\Desktop\Bookstore\frontEnd\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\danil\Desktop\Bookstore\frontEnd\src\components\CartPage" />
       <recent name="C:\Users\danil\Desktop\Bookstore\frontEnd" />
       <recent name="C:\Users\danil\Desktop\Bookstore\backEnd" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\danil\Desktop\Bookstore\frontEnd\src\components" />
       <recent name="D:\Programming workspaces\Web\Bookstore\fonts" />
     </key>
   </component>
@@ -124,7 +136,9 @@
       <workItem from="1606217183904" duration="105000" />
       <workItem from="1606252602655" duration="520000" />
       <workItem from="1606302056596" duration="16000" />
-      <workItem from="1606305887789" duration="8164000" />
+      <workItem from="1606305887789" duration="10978000" />
+      <workItem from="1606320249737" duration="5316000" />
+      <workItem from="1606385670318" duration="2191000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit 2 (main files created)">
       <created>1603361144714</created>
@@ -210,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606314616686</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Merged with authors.">
+      <created>1606315055283</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1606315055283</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,17 +273,22 @@
     <MESSAGE value="Creating product page." />
     <MESSAGE value="Changes after mentor's call." />
     <MESSAGE value="Sack of fixes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Sack of fixes." />
+    <MESSAGE value="Merged with authors." />
+    <option name="LAST_COMMIT_MESSAGE" value="Merged with authors." />
   </component>
   <component name="WindowStateProjectService">
+    <state x="694" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606320980396">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="694" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1606320980396" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606148214107">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1606148214107" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1606071046481">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1606321254811">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1606071046481" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1606321254811" />
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603473131841" />
     <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1606253126441">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -288,15 +314,19 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="598" y="281" key="MultipleFileMergeDialog/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1606314995522" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1606314617959">
+    <state x="461" y="164" key="SettingsEditor" timestamp="1606321003613">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1606314617959" />
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1606321003613" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1606315056808">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1606315056808" />
     <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604998865448" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606306546026">
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606388956439">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1606306546026" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1606388956439" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604189722148" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1605982364275">
       <screen x="0" y="0" width="1920" height="1040" />

@@ -14,12 +14,12 @@ const breakPoints = [
 interface CustomCarouselProps {
     books: BookResponse[],
     title: string
+    className : string
 }
 
-export const CustomCarousel: React.FC<CustomCarouselProps> = ({books, title}) => {
+export const CustomCarousel: React.FC<CustomCarouselProps> = ({books, title, className}) => {
     return (
-        <div>
-           
+        <div className={className}>
             {
                 books.length > 0 && (
                     <>
@@ -30,7 +30,7 @@ export const CustomCarousel: React.FC<CustomCarouselProps> = ({books, title}) =>
                                     {title}
                                 </div>
                             </div>
-                            <Carousel enableTilt={false} className="pt-4" breakPoints={breakPoints}>
+                            <Carousel enableTilt={false} className="pt-4 pb-3" breakPoints={breakPoints}>
                                 {books.map(book => (<BookCard book={book}/>))}
                             </Carousel>
                         </div>

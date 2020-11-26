@@ -1,9 +1,8 @@
 import React, { useState, useContext } from "react";
 import { useForm } from "react-hook-form"
-import axios from 'axios';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { BooksContext } from "../BooksContext"
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faSearch, faShoppingCart} from '@fortawesome/free-solid-svg-icons';
 import {
     Navbar,
     Nav,
@@ -11,7 +10,7 @@ import {
     FormControl,
     Button,
 } from "react-bootstrap";
-import { useHistory } from "react-router-dom";
+import {useHistory} from "react-router-dom";
 import "./styles.css";
 
 type FormData = {
@@ -52,6 +51,8 @@ export const Header: React.FC = () => {
             <FormControl name="input" ref={register} id="searchText" type="text" placeholder="Search" className="mr-sm-2" >
             </FormControl>
             <Button disabled = {!books} type="submit" className="bg-light"><FontAwesomeIcon id="searchBtn" icon={faSearch} size="lg" /></Button>
+                    <FontAwesomeIcon onClick={() => history.push("/cart")}
+                                     id="cartIcon" className="ml-3" icon={faShoppingCart}/>
           </Form>
         </Navbar.Collapse>
       </Navbar>
