@@ -1,8 +1,9 @@
-import React from "react";
-import {useForm} from "react-hook-form"
+import React, { useState, useContext } from "react";
+import { useForm } from "react-hook-form"
 import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch} from '@fortawesome/free-solid-svg-icons';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { BooksContext } from "../BooksContext"
 import {
   Navbar,
   Nav,
@@ -17,40 +18,40 @@ type FormData = {
   input: string;
 };
 
-const books = [
-  {title: "o",
-  id: 1}
-]
-
 export const Header: React.FC = () => {
   let history = useHistory();
-  const {register, handleSubmit} = useForm<FormData>();
+  const [books, setBooks] = useContext(BooksContext);
+  const { register, handleSubmit } = useForm<FormData>();
 
-  const onSubmit = handleSubmit(({ input }) => {
-    console.log(input);
-    let id = books.find((o: { title: string; }) => o.title === input)?.id;
-    if(id)
-    history.push("/books/" + id);
-    else{
-      history.push("/books")
+  const onSubmit = handleSubmit(async ({ input }) => {
+    //How to search while books are not loaded
+    if (books) {
+      console.log(books);
+      let book = books.find((o: { title: string; }) => o.title.includes(input));
+      if (book)
+        history.push("/books/" + book.id, book);
+      else {
+        history.push("/books")
+      }
     }
+
   });
 
   return (
     <div>
-      <Navbar id = "nav-bar" sticky = "top" expand="lg">
-        <Navbar.Brand id = "brand" className = "nav-brand-font" onClick={() => history.push("/")}>B</Navbar.Brand>
+      <Navbar id="nav-bar" sticky="top" expand="lg">
+        <Navbar.Brand id="brand" className="nav-brand-font" onClick={() => history.push("/")}>B</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link id = "nav-link1" className = "mx-3" onClick={() => history.push("/books")}>Books</Nav.Link>
-            <Nav.Link id = "nav-link1" className = "mx-3" onClick={() => history.push("/authors")}>Authors</Nav.Link>
-            <Nav.Link id = "nav-link2" className = "mx-3" onClick={() => history.push("/genres")}>Genres</Nav.Link>
+            <Nav.Link id="nav-link1" className="mx-3" onClick={() => history.push("/books")}>Books</Nav.Link>
+            <Nav.Link id="nav-link1" className="mx-3" onClick={() => history.push("/authors")}>Authors</Nav.Link>
+            <Nav.Link id="nav-link2" className="mx-3" onClick={() => history.push("/genres")}>Genres</Nav.Link>
           </Nav>
-          <Form inline onSubmit = {onSubmit}>
-            <FormControl name = "input" ref = {register} id = "searchText" type="text"  placeholder="Search" className="mr-sm-2" >
+          <Form inline onSubmit={onSubmit}>
+            <FormControl name="input" ref={register} id="searchText" type="text" placeholder="Search" className="mr-sm-2" >
             </FormControl>
-            <Button type = "submit" className="bg-light"><FontAwesomeIcon id = "searchBtn" icon={faSearch} size="lg" /></Button>
+            <Button disabled = {!books} type="submit" className="bg-light"><FontAwesomeIcon id="searchBtn" icon={faSearch} size="lg" /></Button>
           </Form>
         </Navbar.Collapse>
       </Navbar>

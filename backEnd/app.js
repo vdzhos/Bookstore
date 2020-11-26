@@ -62,6 +62,7 @@ app.get("/authors", async(req, res) => {
 app.get("/authors/top10", async(req, res) => {
     const authors = await Author.find();
     const allBooks = await Book.find();
+    const allGenres = await Genre.find();
     let authorsRes = [];
     for (let j = 0; j < authors.length; j++) {
         let author = authors[j];
@@ -71,7 +72,9 @@ app.get("/authors/top10", async(req, res) => {
         let books = [];
         for (let i = 0; i < author.books.length; i++) {
             let book = allBooks.find((b) => { if (b.id == author.books[i]) return true; });
-            books.push({ authors: [author.name], title: book.title, id: book._id, image: book.image, price: book.price });
+            let genres = book.genres.map(g => allGenres.find((b) => { if (b.id == g) return true; }))
+            genres = genres.map(g => g.name);
+            books.push({ authors: [author.name], title: book.title, id: book._id, image: book.image, price: book.price, genres: genres });
         }
         authorsRes.push({ name: author.name, id: author.id, books: [books] });
     }
@@ -91,8 +94,17 @@ app.get("/authors/:id", async(req, res) => {
 });
 
 app.get("/genres", async(req, res) => {
-    const genres = await Genre.find();
-    res.json(genres);
+    const allAuthors = await Author.find();
+    const allBooks = await Book.find();
+    const allGenres = await Genre.find();
+    let result = [];
+    allGenres.forEach(async(genre, index) => {
+        result.push({ name: genre.name, books: [] });
+        genre.books.forEach(book => {
+            result[index].books.push(allBooks.find(a => { if (a.id == book) return true; }))
+        });
+    });
+    res.json(result);
 });
 
 app.get("/genres/:id", async(req, res) => {

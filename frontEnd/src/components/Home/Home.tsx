@@ -1,29 +1,14 @@
-import React, { useState, useEffect } from "react";
-import axios from 'axios';
+import React, { useState, useEffect, useContext } from "react";
 import Header from "../Header";
 import { CustomCarousel } from "../Carousel/CustomCarousel";
 import Img from "../../assets/booksCanvas.jpg";
 import Footer from "../Footer";
-import { BookResponse, getAllBooks } from "../../API/books";
 import Loader from 'react-loader-spinner'
 import { Row } from "react-bootstrap";
+import { BooksContext } from "../BooksContext"
 
 export const Home: React.FC = () => {
-    const [booksList, setBooksList] = useState<BookResponse[] | undefined>(undefined);
-
-    useEffect(() => {
-        (async () => {
-            try {
-                const response = await getAllBooks();
-                if (response) {
-                    setBooksList(response);
-                    console.log(response, "response");
-                }
-            } catch {
-                console.log("some err");
-            }
-        })();
-    }, [])
+    const [books, setBooks] = useContext(BooksContext);
 
     return (
         <div>
@@ -36,9 +21,9 @@ export const Home: React.FC = () => {
             </div>
 
 
-            {booksList && booksList.length > 0 ? (
+            {books && books.length > 0 ? (
                 <>
-                    <CustomCarousel title = {"Best sellers of " + new Date().getFullYear()} books={booksList} />
+                    <CustomCarousel title = {"Best sellers of " + new Date().getFullYear()} books={books} />
                 </>
             ) : (<Row className="justify-content-center my-5" >
                 <Loader

@@ -8,26 +8,26 @@ import Footer from "../Footer";
 
 export const Genres = (props) => {
     let history = useHistory();
-    const [booksList, setBooksList] = useState();
+    const [genres, setGenres] = useState();
 
-    useEffect(() => {
-        (async () => {
-            try {
-                axios
-                    .get("http://localhost:3001/books")
-                    .then(response => setBooksList(response.data));
-            } catch {
-                console.log("some err");
-            }
-        })();
-    }, [])
+    useEffect(async () => { 
+        try {
+        await axios
+            .get('http://localhost:3001/genres')
+            .then(response => (setGenres(response.data)));
+    } catch {
+        console.log("some err");
+    }
+    },[]);
 
     return (
         <div>
             <Header />
             <div className="my-5" >
                 <NavigationPanel/>
-                {<BooksGrid booksList={booksList} />/**/}
+                {genres && console.log(genres[10].books[0])}
+                {genres && <BooksGrid booksList = {genres[10]} />} 
+                
             </div>
             <Footer />
         </div>

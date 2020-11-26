@@ -1,0 +1,128 @@
+.item-page-container .add-to-cart {
+    background-color: #ED4A43;
+    font-weight: bold;
+}
+
+.item-page-container .add-to-cart:hover {
+    background-color: #bf3c36;
+}
+
+.shopping-cart-summary .summary-btn:focus,
+.item-page-container .add-to-cart {
+    box-shadow: none;
+    color: #FFFFFF;
+}
+
+.item-page-container {
+    width: 76.25rem;
+    background-color: #FFFFFF;
+}
+
+@media (max-width: 1220px) {
+    .item-page-container {
+        width: 95%;
+    }
+}
+
+.item-page-container .book-image {
+    width: 18.75rem;
+    max-height: 100%;
+}
+
+.item-page-container .sub-heading {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.item-page-container .description {
+    margin-top: 3rem;
+}
+
+.item-page-container .description .title {
+    color: #545454;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+@media (max-width: 850px) {
+    .book-title {
+        font-size: 1.4rem;
+    }
+    .item-page-container .main-content {
+        flex-direction: column;
+    }
+    .book-props {
+        margin-top: 1rem;
+    }
+}
+
+.book-title-box {
+    margin-bottom: 2rem;
+    height: fit-content;
+    background-color: #f1f1f1;
+}
+
+.book-title-box {
+    margin-bottom: 2rem;
+    height: fit-content;
+    background-color: #f1f1f1;
+}
+
+.book-title {
+    color: #373737;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #8d8d8d;
+}
+
+.book-props .fa-check {
+    color: #1fc319;
+}
+
+.book-props .price {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    letter-spacing: -0.05rem;
+}
+
+.item-page-container .sub-heading {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.genres .g-pill {
+    background-color: #22766E;
+    color: #FFFFFF;
+    font-size: 1.1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-right: 0.3rem;
+    margin-bottom: 0.35rem;
+}
+
+.item-page-container .add-to-cart {
+    background-color: #ED4A43;
+    font-weight: bold;
+}
+
+.item-page-container .add-to-cart:hover {
+    background-color: #bf3c36;
+}
+
+.shopping-cart-summary .summary-btn:focus,
+.item-page-container .add-to-cart {
+    box-shadow: none;
+    color: #FFFFFF;
+}
+
+.item-page-container .description {
+    margin-top: 3rem;
+}
+
+.item-page-container .description .title {
+    color: #545454;
+    font-weight: bold;
+    font-size: 1.25rem;
+}

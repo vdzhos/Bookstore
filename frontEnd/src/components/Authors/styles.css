@@ -1,0 +1,10 @@
+.space-between {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+.space-between>* {
+    margin-bottom: 2rem;
+    justify-self: space-between;
+}

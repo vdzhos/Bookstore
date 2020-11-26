@@ -6,6 +6,7 @@ import Footer from "../Footer";
 import { CustomCarousel } from "../Carousel/CustomCarousel";
 import Loader from 'react-loader-spinner'
 import { Row } from "react-bootstrap";
+import BookCard from "../BookCard";
 
 export const Authors = (props) => {
     let history = useHistory();
@@ -42,8 +43,9 @@ export const Authors = (props) => {
                     authorsList.map(author => (
                         <div>
                                 {(author.books).map(book => (
-                                        <div>
-                                            <CustomCarousel title={author.name} books={book} />
+                                        <div><Row className = "mt-5 ml-5"><div className = "h3 mb-5 ml-5">{author.name}</div></Row>
+                                            <Row className = "space-between justify-content-center">{book.map((b, index) => <BookCard className="mb-5" book = {b}/>)}</Row>
+                                            
                                         </div>
                                     ))}
                             </div>

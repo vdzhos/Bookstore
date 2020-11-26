@@ -1,16 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import axios from "axios";
-import { Container } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 import NavigationPanel from "../NavigationPanel"
 import BooksGrid from "../BooksGrid"
 import Header from "../Header";
 import Footer from "../Footer";
+import { BooksContext } from "../BooksContext"
+import Loader from 'react-loader-spinner'
 import { BookResponse, getAllBooks } from "../../API/books";
 
 export const Books = (props) => {
+    const [booksList, setBooksList] = useContext(BooksContext);
+
     let history = useHistory();
-    const [booksList, setBooksList] = useState();
 
     const sortByPriceFromLow = () => {
         setBooksList(booksList.sort((book1, book2) => book1.price - book2.price));
@@ -25,26 +28,23 @@ export const Books = (props) => {
         setBooksList(booksList.sort((book1, book2) => {if(book2.title < book1.title)return 1;else return -1}));
     }
 
-    useEffect(() => {
-        (async () => {
-            try {
-                axios
-                    .get("http://localhost:3001/books")
-                    .then(response => setBooksList(response.data));
-            } catch {
-                console.log("some err");
-            }
-        })();
-    }, [])
 
     return (
         <div>
             <Header />
             <div className="my-5" >
                 <NavigationPanel name={"Books"} sortByName = {sortByName} sortByPriceFromHigh = {sortByPriceFromHigh} sortByPriceFromLow = {sortByPriceFromLow}/>
-                {<BooksGrid booksList={booksList} />/**/}
-                {/*map => Books Grid*/}
-                {/*View More button*/}
+                {!booksList && (
+                    <Row  className="justify-content-center my-5">
+                    <Loader
+                    type="ThreeDots"
+                    color="#22766E"
+                    height={100}
+                    width={100}
+                    timeout={3000}
+                 /></Row>
+                )}
+                {booksList && booksList.length && <BooksGrid booksList={booksList} />/**/}
             </div>
             <Footer />
         </div>
