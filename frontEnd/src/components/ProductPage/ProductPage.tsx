@@ -1,14 +1,27 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import Header from "../Header";
 import Footer from "../Footer";
 import { useHistory, useLocation } from "react-router-dom";
 import { BookResponse } from "../../API/books";
+import { CartContext } from "../CartContext/CartContext";
 import "./styles.css"
 
 export const ProductPage = () => {
     const location = useLocation<BookResponse>();
+    const [booksInCart, setBooksInCart] = useContext(CartContext);
+    const [addedToCart, setAddedToCart] = useState(!!booksInCart.find((o: { title: string; }) => o.title === location.state.title));
     console.log(location, "location");
     let history = useHistory();
+
+    const handleAddToCart = () => {
+        if (!addedToCart)
+            setBooksInCart([...booksInCart, location.state]);
+        else {
+            setBooksInCart(booksInCart.filter((book: { title: string; }) => book.title !== location.state.title));
+        }
+        setAddedToCart(!addedToCart);
+    }
+
     return (
         <div>
             <Header />
@@ -42,7 +55,7 @@ export const ProductPage = () => {
                                         <p className="d-inline-block m-0 ml-1 price">{location.state.price + "$"}</p>
                                     </div>
                                     {/*Add to cart */}
-                                    <a className="btn add-to-cart primary-text ml-4" href="#">Add to Cart</a>
+                                    <a id={!addedToCart ? "add-btn" : "added"} className={"btn add-to-cart primary-text ml-4 added"} onClick={handleAddToCart}>{!addedToCart ? "Add to Cart" : "Added to Cart"}</a>
                                 </div>
                             </div>
                         </div>

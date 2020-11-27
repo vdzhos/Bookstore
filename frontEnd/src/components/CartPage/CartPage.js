@@ -11,19 +11,33 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 export const CartPage = (props) => {
     let history = useHistory();
     const [booksInCart, setBooksInCart] = useContext(CartContext);
-    const handleDelete = () => {
-
+    const handleIncreaseNum = (book) => {
+        if(!booksInCart.find(o => o === book).num)
+        console.log(booksInCart.find(o => o === book).num = 2)
+        else
+        console.log(++booksInCart.find(o => o === book).num)
     }
+
+    const handleDecreaseNum = (book) => {
+        if(booksInCart.find(o => o === book).num && booksInCart.find(o => o === book).num > 1)
+        console.log(--booksInCart.find(o => o === book).num)
+    }
+
+    const handleDelete = (book) => {
+        setBooksInCart(booksInCart.filter(b => b!== book));
+    }
+
+
     return (
         <div>
             <Header/>
             <div className="main-body flex-grow-1 h-100">
                 <div className="row shopping-cart-container my-5">
 
-                    {!booksInCart.length && (
+                    {booksInCart && !booksInCart.length && (
                         <div className="mx-auto">
                             <p className="h1 mb-4">Cart is empty</p>
-                            <Button onClick={() => history.push("/")} className="btn-lg" id="buttonGoShopping">
+                            <Button onClick={() => history.push("/books")} className="btn-lg" id="buttonGoShopping">
                                 Continue shopping
                             </Button>
                         </div>
@@ -47,28 +61,17 @@ export const CartPage = (props) => {
                                                         <p className="card-text mb-2">{authorStr}</p>
                                                     ))
                                                 }
-                                                {/*<div className="d-xl-none d-block">*/}
-                                                {/*    <div className="d-flex row col-12 p-0 pl-3">*/}
-                                                {/*        <a className="btn btn-plus-minus p-0 pr-2" href="#"><i*/}
-                                                {/*            className="fas fa-minus"></i></a>*/}
-                                                {/*        <input className="plus-minus-text text-center p-0"*/}
-                                                {/*               type="text"*/}
-                                                {/*               value="1" min="1" max="5"/>*/}
-                                                {/*        <a className="btn btn-plus-minus p-0 pl-2" href="#"><i*/}
-                                                {/*            className="fas fa-plus"></i></a>*/}
-                                                {/*    </div>*/}
-                                                {/*</div>*/}
                                             </div>
                                             <div
                                                 className="d-xl-flex d-none col-4 justify-content-center align-items-center p-1">
                                                 <div className="d-flex row justify-content-center col-12 p-0">
                                                     <a className="btn btn-plus-minus p-0 pr-2" href="#">
-                                                        <FontAwesomeIcon icon={faPlus} size="xs" /*onClick={handleIncreaseNum}*//>
+                                                        <FontAwesomeIcon icon={faPlus} size="xs" onClick={e => handleIncreaseNum(book)}/>
                                                     </a>
-                                                    <input className="plus-minus-text text-center p-0" type="text"
-                                                           value="1" min="1" max="5"/>
+                                                    <p className="plus-minus-text text-center p-0"
+                                                            >{book.num ? book.num : 1}</p>
                                                     <a className="btn btn-plus-minus p-0 pl-2" href="#">
-                                                        <FontAwesomeIcon icon={faMinus} size="xs" /*onClick={handleDecreaseNum}*//>
+                                                        <FontAwesomeIcon icon={faMinus} size="xs" onClick={e => handleDecreaseNum(book)}/>
                                                     </a>
                                                 </div>
                                             </div>
@@ -79,7 +82,7 @@ export const CartPage = (props) => {
                                             <p className="price text-right">${book.price}</p>
                                             <div className="position-absolute text-right delete">
                                                 <a href="#">
-                                                    <FontAwesomeIcon icon={faTrashAlt} size="xs" /*onClick={handleDelete}*//>
+                                                    <FontAwesomeIcon icon={faTrashAlt} size="xs" onClick={e => handleDelete(book)}/>
                                                 </a>
                                             </div>
                                         </div>
@@ -96,18 +99,18 @@ export const CartPage = (props) => {
                                 </div>
                                 <div className="total d-flex justify-content-end mr-4 mb-1">
                                     <p className="m-0">
-                                        ${Math.round(booksInCart.reduce((total, book) => total + book.price, 0) * 100) / 100}
+                                        ${Math.round(booksInCart.reduce((total, book) => total + book.num * book.price, 0) * 100) / 100}
                                     </p>
                                 </div>
                             </div>
                             <div className="row">
                                 <a id="continueShoppingA" className="btn primary-text summary-btn col-6 col-sm-5 ml-3"
-                                   onClick={() => history.push("/")}>Continue
+                                   onClick={() => history.push("/books")}>Continue
                                     shopping</a>
                                 <div
                                     className="total flex-grow-1 d-xl-flex d-none justify-content-end align-items-center mr-3">
                                     <p className="m-0">
-                                        Total: ${Math.round(booksInCart.reduce((total, book) => total + book.price, 0) * 100) / 100}
+                                        Total: ${Math.round(booksInCart.reduce((total, book) => total + ((book.num === undefined)?1:book.num) * book.price, 0) * 100) / 100}
                                     </p>
                                 </div>
                                 <a className="btn primary-text summary-btn col-5 col-sm-6 ml-auto mr-3"

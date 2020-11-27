@@ -8,3 +8,17 @@
     margin-bottom: 2rem;
     justify-self: space-between;
 }
+
+.books-container {
+    background-color: whitesmoke;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    margin-bottom: 3%;
+    border-radius: 10px 0px 0px 0px;
+    border-top: 10px solid #22766E;
+    border-bottom: 4px solid rgb(170, 170, 170);
+}
+
+.book {
+    width: 200px;
+}

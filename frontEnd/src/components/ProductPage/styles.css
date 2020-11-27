@@ -126,3 +126,13 @@
     font-weight: bold;
     font-size: 1.25rem;
 }
+
+#add-btn {
+    color: #FFFFFF;
+}
+
+#added {
+    color: #ED4A43;
+    background-color: white;
+    border-color: #ED4A43;
+}
