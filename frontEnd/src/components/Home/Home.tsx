@@ -20,7 +20,7 @@ export const Home: React.FC = () => {
                 </div>
             </div>
             {books && books.length > 0 ? (
-                <div ><CustomCarousel className="mt-4 mb-5" title={"Best sellers of " + new Date().getFullYear()} books={books}/> </div>
+                <div ><CustomCarousel className="mt-4 mb-5" title={"Best sellers of " + new Date().getFullYear()} books={books.slice(27, 47)}/> </div>
                 
             ) : (<Row className="justify-content-center my-5">
                 <Loader

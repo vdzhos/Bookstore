@@ -41,7 +41,6 @@ export const Header: React.FC = () => {
           <Nav className="mr-auto">
             <Nav.Link id="nav-link1" className="mx-3" onClick={() => history.push("/books")}>Books</Nav.Link>
             <Nav.Link id="nav-link1" className="mx-3" onClick={() => history.push("/authors")}>Authors</Nav.Link>
-            <Nav.Link id="nav-link2" className="mx-3" onClick={() => history.push("/genres")}>Genres</Nav.Link>
           </Nav>
           <Form inline onSubmit={onSubmit}>
             <FormControl name="input" ref={register} id="searchText" type="text" placeholder="Search" className="mr-sm-2" >

@@ -31,7 +31,7 @@ export const CustomCarousel: React.FC<CustomCarouselProps> = ({books, title, cla
                                 </div>
                             </div>
                             <Carousel enableTilt={false} className="pt-4 pb-3" breakPoints={breakPoints}>
-                                {books.map(book => (<BookCard book={book}/>))}
+                                {books.map(book => (<BookCard className={"mx-4"} book={book}/>))}
                             </Carousel>
                         </div>
                     </>

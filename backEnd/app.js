@@ -32,6 +32,25 @@ app.get("/books", async(req, res) => {
     res.json(bbooks);
 });
 
+app.get("/books/20", async(req, res) => {
+    let books = await Book.find();
+    const authors = await Author.find();
+    const genres = await Genre.find();
+    let bbooks = [];
+    for (let i=0; i<20; i++){
+        let book = books[i];
+        let author = book.authors[0];
+        let a = authors.find((a) => {
+            if (a.id == author) return true;
+        }).name
+        let g = book.genres.map((g) => genres.find(fg => {
+            if (fg.id == g) return true
+        }).name)
+        bbooks.push({ authors: [a], genres: g, title: book.title, id: book._id, image: book.image, price: book.price })
+    }
+    res.json(bbooks);
+});
+
 app.get("/books/:id", async(req, res) => {
     const book = await Book.findById(req.params.id);
     let author = await Author.findById(book.authors[0]);

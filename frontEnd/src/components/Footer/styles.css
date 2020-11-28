@@ -331,3 +331,7 @@
         transform: translateX(0);
     }
 }
+
+.footer {
+    grid-area: footer;
+}

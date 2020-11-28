@@ -26,12 +26,16 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="043f71b5-df44-46c0-aba5-f71a98695f88" name="Default Changelist" comment="CartPage todo.">
+    <list default="true" id="043f71b5-df44-46c0-aba5-f71a98695f88" name="Default Changelist" comment="CartPage with context">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/components/BookCard/BookCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/BookCard/BookCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/components/CartPage/CartPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/CartPage/CartPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/components/CartPage/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/CartPage/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backEnd/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/src/components/Carousel/CustomCarousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/Carousel/CustomCarousel.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontEnd/src/components/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/Footer/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/src/components/Footer/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/Footer/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/src/components/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/Home/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/src/components/SearchPage/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/SearchPage/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +139,9 @@
       <workItem from="1606305887789" duration="10978000" />
       <workItem from="1606320249737" duration="5316000" />
       <workItem from="1606385670318" duration="2504000" />
-      <workItem from="1606400195963" duration="5151000" />
+      <workItem from="1606400195963" duration="5440000" />
+      <workItem from="1606477763362" duration="708000" />
+      <workItem from="1606587696779" duration="5800000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit 2 (main files created)">
       <created>1603361144714</created>
@@ -235,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606389256218</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="CartPage with context">
+      <created>1606405741117</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1606405741117</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +292,8 @@
     <MESSAGE value="Sack of fixes." />
     <MESSAGE value="Merged with authors." />
     <MESSAGE value="CartPage todo." />
-    <option name="LAST_COMMIT_MESSAGE" value="CartPage todo." />
+    <MESSAGE value="CartPage with context" />
+    <option name="LAST_COMMIT_MESSAGE" value="CartPage with context" />
   </component>
   <component name="WindowStateProjectService">
     <state x="694" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606320980396">
@@ -323,16 +337,16 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1606321003613" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1606389257554">
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1606405742612">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1606389257554" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1606405742612" />
     <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604998865448" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606400349189">
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606587753946">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1606400349189" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604189722148" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606587753946" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1605982364275">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

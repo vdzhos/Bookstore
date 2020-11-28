@@ -1,15 +1,15 @@
 import React from "react";
 import './bootstrap.min.css';
 import './styles.css';
-import {Navbar}  from "react-bootstrap";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {Container, Navbar, NavbarBrand} from "react-bootstrap";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {
     faTwitter, faFacebook, faInstagram, faTelegram
 } from '@fortawesome/free-brands-svg-icons';
 import {faEnvelope, faMapMarkedAlt, faPhoneAlt} from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => (
-    <div className = "f-container">
+    <footer className="footer">
         <div className="footer page-footer w-100 site-footer pb-4">
             <div className="col-xl-9 col-lg-10 col-sm-10 col-10 row h-100 px-0 mx-auto pt-4 footer-content">
                 <div className="col-lg-4 col-md-6 social-media-block p-0 color-gray">
@@ -26,8 +26,10 @@ const Footer = () => (
                                                                              textDecoration={"none"}/> </a>
                         </li>
                         <li className="list-inline-item">
-                            <a href="https://www.facebook.com/volodymyr.dgosan/" title="facebook" target="_blank"
-                               className="fab primary-text"><FontAwesomeIcon icon={faFacebook} textDecoration={"none"}/></a>
+                            <a href="https://www.facebook.com/volodymyr.dgosan/" title="facebook"
+                               target="_blank"
+                               className="fab primary-text"><FontAwesomeIcon icon={faFacebook}
+                                                                             textDecoration={"none"}/></a>
                         </li>
                         <li className="list-inline-item">
                             <a href="https://t.me/vdzhos/" title="telegram" target="_blank"
@@ -66,19 +68,23 @@ const Footer = () => (
                 <div className="col-lg-4 col-md-6 contacts-block  color-gray">
                     <ul className="list-unstyled pl-lg-5 pl-md-4 contacts-list">
                         <li>
-                            <div className="d-inline-block"><FontAwesomeIcon icon={faPhoneAlt}/> &ensp;(097) 019 90 40
+                            <div className="d-inline-block"><FontAwesomeIcon icon={faPhoneAlt}/> &ensp;(097) 019
+                                90 40
                             </div>
                         </li>
                         <li>
-                            <div className="d-inline-block"><FontAwesomeIcon icon={faPhoneAlt}/>&ensp;(050) 123 45 67
+                            <div className="d-inline-block"><FontAwesomeIcon icon={faPhoneAlt}/>&ensp;(050) 123
+                                45 67
                             </div>
                         </li>
                         <li>
-                            <div className="d-inline-block"><FontAwesomeIcon icon={faPhoneAlt}/>&ensp;(063) 987 65 43
+                            <div className="d-inline-block"><FontAwesomeIcon icon={faPhoneAlt}/>&ensp;(063) 987
+                                65 43
                             </div>
                         </li>
                         <li>
-                            <div className="d-inline-block"><FontAwesomeIcon icon={faEnvelope}/>&ensp;dgosan37@gmail.com
+                            <div className="d-inline-block"><FontAwesomeIcon
+                                icon={faEnvelope}/>&ensp;dgosan37@gmail.com
                             </div>
                         </li>
                         <li>
@@ -90,7 +96,7 @@ const Footer = () => (
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
 );
 
 export default Footer;
