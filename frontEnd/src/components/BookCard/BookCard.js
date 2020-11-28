@@ -39,9 +39,9 @@ export default (props) => {
                         ))
                     }
                     <Card.Text id="priceAndBuyRow" className="font-weight-bold m-1 text-center card-price px-3">
-                        <span id="price" className="price">{props.book.price + "$"}</span>
+                        <span id="price" className="price">{props.book.price.toFixed(2) + "$"}</span>
                         <a onClick={handleClickOnCart} className="cartLink"><FontAwesomeIcon id="cartIcon" icon={(!booksInCart.find(o => o.id === props.book.id)) ? faCartPlus : faShoppingCart} /></a>
-                    </Card.Text>
+                    </Card.Text>   
                 </Card.Body>
             </Card>
         </div>

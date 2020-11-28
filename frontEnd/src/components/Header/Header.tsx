@@ -23,15 +23,11 @@ export const Header: React.FC = () => {
   const { register, handleSubmit } = useForm<FormData>();
 
   const onSubmit = handleSubmit(async ({ input }) => {
-    //How to search while books are not loaded
     if (books) {
-      console.log(books);
-      let book = books.find((o: { title: string; }) => o.title.includes(input));
-      if (book)
-        history.push("/books/" + book.id, book);
-      else {
-        history.push("/books")
-      }
+      let book;
+      let foundbooks: { title: string | string[]; }[] = [];
+      books.forEach((b: { title: string | string[]; }) => {if(b.title.includes(input)) foundbooks.push(b);})
+      history.push(`/search/${input}`, foundbooks);
     }
 
   });

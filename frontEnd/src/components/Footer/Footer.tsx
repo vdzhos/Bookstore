@@ -1,6 +1,7 @@
 import React from "react";
 import './bootstrap.min.css';
 import './styles.css';
+import {Navbar}  from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faTwitter, faFacebook, faInstagram, faTelegram
@@ -8,8 +9,8 @@ import {
 import {faEnvelope, faMapMarkedAlt, faPhoneAlt} from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => (
-    <div>
-        <div className="w-100 site-footer pb-4">
+    <div className = "f-container">
+        <div className="footer page-footer w-100 site-footer pb-4">
             <div className="col-xl-9 col-lg-10 col-sm-10 col-10 row h-100 px-0 mx-auto pt-4 footer-content">
                 <div className="col-lg-4 col-md-6 social-media-block p-0 color-gray">
                     <div className="primary-text logo ml-3 mb-4">

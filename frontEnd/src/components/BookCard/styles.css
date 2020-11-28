@@ -12,6 +12,7 @@
 .book-card {
     border-radius: 10px;
     height: 24em;
+    max-width: 100px;
 }
 
 .book-card:hover {
@@ -38,7 +39,7 @@
 
 #imgCard {
     height: 15rem;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 #priceAndBuyRow #cartIcon {

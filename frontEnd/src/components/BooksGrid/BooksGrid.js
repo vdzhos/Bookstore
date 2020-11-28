@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 export const BooksGrid = (props) => {
-    const numOfBooks = 24;
+    const numOfBooks = 20;
 
     const [numOfViewMoreClicks, setNumOfViewMoreClicks] = useState(1);
 

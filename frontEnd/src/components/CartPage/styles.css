@@ -106,14 +106,6 @@ body {
     font-size: 1.25rem;
 }
 
-.site-footer {
-    background-color: #222;
-}
-
-.footer-content {
-    background-color: #222222;
-}
-
 .social-media-block .logo {
     font-size: 2.7em;
     font-weight: bold;
@@ -447,4 +439,9 @@ body {
 #buttonGoShopping {
     background-color: #22766E;
     width: 100%;
+}
+
+#purchase {
+    background-color: #22766E;
+    color: white;
 }

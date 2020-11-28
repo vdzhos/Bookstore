@@ -1,36 +1,43 @@
-import React, {useContext, useState} from 'react';
+import React, { useContext, useState } from 'react';
 import Header from "../Header";
 import Footer from "../Footer";
-import {CartContext} from "../CartContext/CartContext";
-import {useHistory} from "react-router-dom";
+import { CartContext } from "../CartContext/CartContext";
+import { useHistory } from "react-router-dom";
 import "./styles.css";
-import {Button} from "react-bootstrap";
-import {faMinus, faPlus, faTrashAlt} from "@fortawesome/free-solid-svg-icons";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { Button } from "react-bootstrap";
+import { faMinus, faPlus, faTrashAlt } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const CartPage = (props) => {
     let history = useHistory();
     const [booksInCart, setBooksInCart] = useContext(CartContext);
     const handleIncreaseNum = (book) => {
-        if(!booksInCart.find(o => o === book).num)
-        console.log(booksInCart.find(o => o === book).num = 2)
-        else
-        console.log(++booksInCart.find(o => o === book).num)
+        if (!booksInCart.find(o => o === book).num) {
+            booksInCart.find(o => o === book).num = 2
+        }
+        else {
+            console.log(++booksInCart.find(o => o === book).num)
+        }
+        setBooksInCart([...booksInCart]);
     }
 
     const handleDecreaseNum = (book) => {
-        if(booksInCart.find(o => o === book).num && booksInCart.find(o => o === book).num > 1)
-        console.log(--booksInCart.find(o => o === book).num)
+        if (booksInCart.find(o => o === book).num && booksInCart.find(o => o === book).num > 1)
+            console.log(--booksInCart.find(o => o === book).num)
+            setBooksInCart([...booksInCart]);
     }
 
     const handleDelete = (book) => {
-        setBooksInCart(booksInCart.filter(b => b!== book));
+        setBooksInCart(booksInCart.filter(b => b !== book));
     }
 
+    const handlePurchase = () => {
+        setBooksInCart([]);
+    }
 
     return (
         <div>
-            <Header/>
+            <Header />
             <div className="main-body flex-grow-1 h-100">
                 <div className="row shopping-cart-container my-5">
 
@@ -49,7 +56,7 @@ export const CartPage = (props) => {
                                 <div className="py-4">
                                     <img
                                         src={book.image}
-                                        className="card-img" alt="Book in cart"/>
+                                        className="card-img" alt="Book in cart" />
                                 </div>
                                 <div className="row no-gutters flex-grow-1">
                                     <div className="col-xl-9 col-8">
@@ -65,13 +72,13 @@ export const CartPage = (props) => {
                                             <div
                                                 className="d-xl-flex d-none col-4 justify-content-center align-items-center p-1">
                                                 <div className="d-flex row justify-content-center col-12 p-0">
-                                                    <a className="btn btn-plus-minus p-0 pr-2" href="#">
-                                                        <FontAwesomeIcon icon={faPlus} size="xs" onClick={e => handleIncreaseNum(book)}/>
+                                                    <a className="btn btn-plus-minus p-0 pr-2">
+                                                        <FontAwesomeIcon icon={faPlus} size="xs" onClick={e => handleIncreaseNum(book)} />
                                                     </a>
                                                     <p className="plus-minus-text text-center p-0"
-                                                            >{book.num ? book.num : 1}</p>
-                                                    <a className="btn btn-plus-minus p-0 pl-2" href="#">
-                                                        <FontAwesomeIcon icon={faMinus} size="xs" onClick={e => handleDecreaseNum(book)}/>
+                                                    >{book.num ? book.num : 1}</p>
+                                                    <a className="btn btn-plus-minus p-0 pl-2">
+                                                        <FontAwesomeIcon icon={faMinus} size="xs" onClick={e => handleDecreaseNum(book)} />
                                                     </a>
                                                 </div>
                                             </div>
@@ -81,8 +88,8 @@ export const CartPage = (props) => {
                                         <div className="position-relative card-footer border-0 h-100 pt-3 pl-0">
                                             <p className="price text-right">${book.price}</p>
                                             <div className="position-absolute text-right delete">
-                                                <a href="#">
-                                                    <FontAwesomeIcon icon={faTrashAlt} size="xs" onClick={e => handleDelete(book)}/>
+                                                <a>
+                                                    <FontAwesomeIcon icon={faTrashAlt} size="xs" onClick={e => handleDelete(book)} />
                                                 </a>
                                             </div>
                                         </div>
@@ -91,7 +98,7 @@ export const CartPage = (props) => {
                             </div>
                         </div>
                     })}
-                    {booksInCart && booksInCart.length>0 && (
+                    {booksInCart && booksInCart.length > 0 && (
                         <div className="shopping-cart-summary shadow col-12 p-4">
                             <div className="d-xl-none d-flex row justify-content-between mb-2">
                                 <div className="total d-flex justify-content-start ml-4 mb-1">
@@ -99,28 +106,29 @@ export const CartPage = (props) => {
                                 </div>
                                 <div className="total d-flex justify-content-end mr-4 mb-1">
                                     <p className="m-0">
-                                        ${Math.round(booksInCart.reduce((total, book) => total + book.num * book.price, 0) * 100) / 100}
+                                        ${(Math.round(booksInCart.reduce((total, book) => total + book.num * book.price, 0) * 100) / 100).toFixed(2)}
                                     </p>
                                 </div>
                             </div>
                             <div className="row">
                                 <a id="continueShoppingA" className="btn primary-text summary-btn col-6 col-sm-5 ml-3"
-                                   onClick={() => history.push("/books")}>Continue
+                                    onClick={() => history.push("/books")}>Continue
                                     shopping</a>
                                 <div
                                     className="total flex-grow-1 d-xl-flex d-none justify-content-end align-items-center mr-3">
                                     <p className="m-0">
-                                        Total: ${Math.round(booksInCart.reduce((total, book) => total + ((book.num === undefined)?1:book.num) * book.price, 0) * 100) / 100}
+                                        Total: ${(Math.round(booksInCart.reduce((total, book) => total + book.num * book.price, 0) * 100) / 100).toFixed(2)}
                                     </p>
                                 </div>
-                                <a className="btn primary-text summary-btn col-5 col-sm-6 ml-auto mr-3"
-                                   href="#">Purchase</a>
+                                <a id="purchase" className="btn primary-text summary-btn col-5 col-sm-6 ml-auto mr-3" onClick={handlePurchase}
+                                   >Purchase</a>
                             </div>
                         </div>
                     )}
                 </div>
             </div>
-            <Footer/>
+            <Footer />
+            
         </div>
     );
 }

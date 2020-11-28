@@ -1,9 +1,9 @@
-import React, { useContext, useState } from "react";
-import Header from "../Header";
-import Footer from "../Footer";
-import { useHistory, useLocation } from "react-router-dom";
+import React, { useContext, useState} from "react";
+import {useLocation} from "react-router-dom";
 import { BookResponse } from "../../API/books";
 import { CartContext } from "../CartContext/CartContext";
+import Header from "../Header";
+import Footer from "../Footer";
 import "./styles.css"
 
 export const ProductPage = () => {
@@ -11,7 +11,6 @@ export const ProductPage = () => {
     const [booksInCart, setBooksInCart] = useContext(CartContext);
     const [addedToCart, setAddedToCart] = useState(!!booksInCart.find((o: { title: string; }) => o.title === location.state.title));
     console.log(location, "location");
-    let history = useHistory();
 
     const handleAddToCart = () => {
         if (!addedToCart)
