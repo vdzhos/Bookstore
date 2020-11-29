@@ -1,5 +1,5 @@
 import React from "react";
-import {useHistory} from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import NavigationPanel from "../NavigationPanel"
 import BooksGrid from "../BooksGrid"
 import Header from "../Header";
@@ -14,24 +14,24 @@ export const SearchPage = (props) => {
 
     return (
         <div>
-            <Header />
+        <Header />
             <div className="my-5" >
                 {location.state.length <= 0 && (
                     <div>
                         <Row className="justify-content-center h2" >Nothing found</Row>
                         <Row className="justify-content-center h2" >
-                        <Button
-                            id="continueShoppingA"
-                            className=" btn primary-text summary-btn col-6 col-sm-5 mt-4"
-                            onClick={() => history.push("/books")}>
-                            Continue shopping
-                        </Button>
+                            <Button
+                                id="continueShoppingA"
+                                className=" btn primary-text summary-btn col-6 col-sm-5 mt-4"
+                                onClick={() => history.push("/books")}>
+                                Continue shopping
+                </Button>
                         </Row>
                     </div>
                 )}
-                {location && location.state.length > 0 && <BooksGrid booksList={location.state} />/**/}
+                {location && location.state.length > 0 && <><BooksGrid booksList={location.state} /> <Footer /></> /**/}
             </div>
-            <Footer />
+            
         </div>
     );
 };

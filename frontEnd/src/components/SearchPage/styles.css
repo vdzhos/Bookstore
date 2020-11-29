@@ -3,3 +3,7 @@
     background-color: #ED4A43;
     border-color: white;
 }
+
+.main-container {
+    /* grid-area: main; */
+}
