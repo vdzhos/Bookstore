@@ -1,0 +1,214 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin: 0;
+    background-color: #ffffff;
+    /*background-image: url("https://www.transparenttextures.com/patterns/arches.png");*/
+
+}
+
+@font-face {
+    font-family: "Site Title";
+    src: url("./fonts/SCRIPTBL.TTF") format("truetype");
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h1 {
+    font-family:"Site Title" ;
+    font-size: 100px;
+    text-align: left;
+    letter-spacing: -0.01rem;
+    text-decoration: underline;
+    text-decoration-color: #22766E;
+}
+h2,h3{
+    text-align: center;
+}
+iframe{
+    margin-top: 3%;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+
+.container{
+    display : flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 50px;
+    margin: 50px auto;
+    width: 75%;
+    height: 75%;
+    text-align: center;
+}
+.content-wrap {
+    display : flex;
+    justify-content: space-around;
+    /*padding: 50px;*/
+    margin: 1% auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border : 0 solid black;
+}
+
+.btn-primary{
+    background: none;
+    color: black;
+    border:none;
+    text-decoration: #22766E underline;
+}
+
+.slogan-text-div{
+    border : 0 solid blue;
+    margin-top: 5%;
+}
+.text-div{
+    border : 0 solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.contact-text-div{
+    border : 0 solid blue;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.slogan-images-div {
+    border : 0 solid blue;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -3%;
+}
+.slogan-images-div .image-div{
+    margin: 2% 0.5%;
+}
+.shipping-images-div {
+    border : 0 solid blue;
+    display: flex;
+    justify-content: space-between;
+}
+.payment-images-div {
+    border : 0 solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.one-image-div {
+    border : 0 solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.image-div{
+    width: min-content;
+    display: inline-block;
+    height: min-content;
+    border : 0 solid black;
+    margin: auto;
+}
+
+#third-img{
+    margin-top: -2%;
+}
+#first-img{
+    margin-top: 6%;
+}
+#package-img{
+    width: 60px;
+    height: 60px;
+}
+#truck-img{
+     width: 160px;
+     height: 160px;
+ }
+#payment-img{
+    width: 297px;
+    height: 106px;
+}
+#cash-img{
+    width: 96px;
+    height: 96px;
+}
+#returns-img{
+    width: 128px;
+    height: 128px;
+}
+#loyalty-img{
+    width: 128px;
+    height: 128px;
+}
+#slogan-img{
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+}
+.slogan-img figure {
+    position: relative;
+    overflow: hidden;
+}
+.slogan-img figure::before {
+    position: absolute;
+    top: 0;
+    left: -80%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+}
+.slogan-img figure:hover::before {
+    -webkit-animation: shine .75s;
+    animation: shine .75s;
+}
+@-webkit-keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+#contacts{
+    text-align: left;
+    padding-inline-start: 0;
+}
+.title {
+    color: grey;
+}
+.text-div ul{
+    padding: 0;
+}
+
+.fa-envelope:before{
+    color: #ED4A43;
+}
+.fa-map-marked-alt:before{
+    color: #ED4A43;
+}
+.fa-phone-alt:before{
+    color: #ED4A43;
+}
