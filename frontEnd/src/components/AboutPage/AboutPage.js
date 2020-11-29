@@ -1,6 +1,5 @@
 import React from 'react';
 import './css/about.css'
-import './css/main.css'
 import Header from "../Header";
 import Footer from "../Footer";
 import sloganPhoto from "./css/assets/sloganPhoto.jpg";
@@ -17,7 +16,7 @@ export const AboutPage = () => {
         <div>
             <Header/>
             <div className="main-body">
-                <div className="container" id="slogan">
+                <div className="container container-about-page" id="slogan">
                     <div className="content-wrap">
                         <div className="slogan-text-div">
                             <h1>Welcome to our reading paradise</h1>
@@ -30,7 +29,7 @@ export const AboutPage = () => {
                     </div>
 
                 </div>
-                <div className="container">
+                <div className="container container-about-page">
 
                     <div className="text-div">
                         <h2>About Us</h2>
@@ -41,7 +40,7 @@ export const AboutPage = () => {
 
                     </div>
                 </div>
-                <div className="container" id="shipping">
+                <div className="container container-about-page" id="shipping">
                     <div className="content-wrap">
                         <div className="text-div">
                             <h2>Shipping and delivery</h2>
@@ -59,7 +58,7 @@ export const AboutPage = () => {
                         </div>
                     </div>
 
-                    <a className="btn btn-primary" data-toggle="collapse" href="#collapse-shipping" role="button"
+                    <a className="btn btn-primary-about-page" data-toggle="collapse" href="#collapse-shipping" role="button"
                        aria-expanded="false" aria-controls="collapseExample">
                         Full Shipping & Delivery Policy
                     </a>
@@ -130,7 +129,7 @@ export const AboutPage = () => {
                 </div>
 
 
-                <div className="container" id="payment">
+                <div className="container container-about-page" id="payment">
                     <div className="content-wrap">
                         <div className="payment-images-div">
                             <div className="image-div">
@@ -148,7 +147,7 @@ export const AboutPage = () => {
                     </div>
                 </div>
 
-                <div className="container" id="returns">
+                <div className="container container-about-page" id="returns">
                     <div className="content-wrap">
                         <div className="text-div">
                             <h2>Returns</h2>
@@ -163,7 +162,7 @@ export const AboutPage = () => {
                             </div>
                         </div>
                     </div>
-                    <a className="btn btn-primary" data-toggle="collapse" href="#collapse-returns" role="button"
+                    <a className="btn btn-primary-about-page" data-toggle="collapse" href="#collapse-returns" role="button"
                        aria-expanded="false" aria-controls="collapse-returns">
                         Full Returns Policy
                     </a>
@@ -233,7 +232,7 @@ export const AboutPage = () => {
                 </div>
 
 
-                <div className="container" id="loyalty">
+                <div className="container container-about-page" id="loyalty">
                     <div className="content-wrap">
                         <div className="one-image-div">
                             <div className="image-div">
@@ -246,7 +245,7 @@ export const AboutPage = () => {
                                 Check more in the passage below.</p>
                         </div>
                     </div>
-                    <a className="btn btn-primary" data-toggle="collapse" href="#collapse-loyalty" role="button"
+                    <a className="btn btn-primary-about-page" data-toggle="collapse" href="#collapse-loyalty" role="button"
                        aria-expanded="false" aria-controls="collapse-loyalty">
                         Loyalty Program
                     </a>
@@ -288,7 +287,7 @@ export const AboutPage = () => {
                 </div>
 
 
-                <div className="container" id="contact">
+                <div className="container container-about-page" id="contact">
                     <div className="content-wrap">
                         <div className="contact-text-div">
                             <h2>Contact us</h2>

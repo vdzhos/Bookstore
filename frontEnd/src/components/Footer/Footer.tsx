@@ -1,14 +1,15 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faTwitter, faFacebook, faInstagram, faTelegram} from '@fortawesome/free-brands-svg-icons';
+import {faEnvelope, faMapMarkedAlt, faPhoneAlt} from '@fortawesome/free-solid-svg-icons';
 import './bootstrap.min.css';
 import './styles.css';
-import {Container, Navbar, NavbarBrand} from "react-bootstrap";
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {
-    faTwitter, faFacebook, faInstagram, faTelegram
-} from '@fortawesome/free-brands-svg-icons';
-import {faEnvelope, faMapMarkedAlt, faPhoneAlt} from '@fortawesome/free-solid-svg-icons';
 
-const Footer = () => (
+const Footer = () => {
+    let history = useHistory();
+
+    return (
     <footer className="footer">
         <div className="footer page-footer w-100 site-footer pb-4">
             <div className="col-xl-9 col-lg-10 col-sm-10 col-10 row h-100 px-0 mx-auto pt-4 footer-content">
@@ -46,7 +47,7 @@ const Footer = () => (
                 <div className="col-lg-4 d-lg-block d-none info-block  color-gray">
                     <ul className="list-unstyled pl-5 info-list">
                         <li>
-                            <a href="#" title="about us">About Us</a>
+                            <a href="#" title="about us" onClick = {() => history.push("/about")}>About Us</a>
                         </li>
                         <li>
                             <a href="#" title="delivery">Shipping and Delivery</a>
@@ -98,5 +99,5 @@ const Footer = () => (
         </div>
     </footer>
 );
-
+}
 export default Footer;

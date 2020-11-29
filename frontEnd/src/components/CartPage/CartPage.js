@@ -44,7 +44,7 @@ export const CartPage = (props) => {
                     {booksInCart && !booksInCart.length && (
                         <div className="mx-auto">
                             <p className="h1 mb-4">Cart is empty</p>
-                            <Button onClick={() => history.push("/books")} className="btn-lg" id="buttonGoShopping">
+                            <Button onClick={() => history.goBack()} className="btn-lg" id="buttonGoShopping">
                                 Continue shopping
                             </Button>
                         </div>
@@ -106,7 +106,7 @@ export const CartPage = (props) => {
                                 </div>
                                 <div className="total d-flex justify-content-end mr-4 mb-1">
                                     <p className="m-0">
-                                        ${(Math.round(booksInCart.reduce((total, book) => total + book.num * book.price, 0) * 100) / 100).toFixed(2)}
+                                        ${(Math.round(booksInCart.reduce((total, book) => total + (book.num ? book.num : 1) * book.price, 0) * 100) / 100).toFixed(2)}
                                     </p>
                                 </div>
                             </div>
@@ -117,7 +117,7 @@ export const CartPage = (props) => {
                                 <div
                                     className="total flex-grow-1 d-xl-flex d-none justify-content-end align-items-center mr-3">
                                     <p className="m-0">
-                                        Total: ${(Math.round(booksInCart.reduce((total, book) => total + book.num * book.price, 0) * 100) / 100).toFixed(2)}
+                                        Total: ${(Math.round(booksInCart.reduce((total, book) => total + (book.num ? book.num : 1)  * book.price, 0) * 100) / 100).toFixed(2)}
                                     </p>
                                 </div>
                                 <a id="purchase" className="btn primary-text summary-btn col-5 col-sm-6 ml-auto mr-3" onClick={handlePurchase}
