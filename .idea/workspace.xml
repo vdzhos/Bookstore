@@ -26,16 +26,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="043f71b5-df44-46c0-aba5-f71a98695f88" name="Default Changelist" comment="CartPage with context">
+    <list default="true" id="043f71b5-df44-46c0-aba5-f71a98695f88" name="Default Changelist" comment="fixed width between cards">
+      <change beforePath="$PROJECT_DIR$/.idea/Bookstore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Bookstore.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backEnd/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backEnd/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontEnd/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/components/Carousel/CustomCarousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/Carousel/CustomCarousel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/components/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/Footer/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/components/Footer/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/Footer/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/Header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/components/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/Home/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontEnd/src/components/SearchPage/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/components/SearchPage/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontEnd/src/routerConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontEnd/src/routerConfig.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +44,8 @@
         <option value="HTML File" />
         <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -74,7 +70,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontEnd/src/components/CartPage" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontEnd/src/components/AboutPage" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
@@ -82,14 +78,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\danil\Desktop\Bookstore\frontEnd\src\components\CartPage" />
-      <recent name="C:\Users\danil\Desktop\Bookstore\frontEnd" />
-      <recent name="C:\Users\danil\Desktop\Bookstore\backEnd" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\danil\Desktop\Bookstore\frontEnd\src\components" />
       <recent name="D:\Programming workspaces\Web\Bookstore\fonts" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\danil\Desktop\Bookstore\frontEnd\src\components\AboutPage" />
+      <recent name="C:\Users\danil\Desktop\Bookstore\frontEnd\src\components\CartPage" />
+      <recent name="C:\Users\danil\Desktop\Bookstore\frontEnd" />
+      <recent name="C:\Users\danil\Desktop\Bookstore\backEnd" />
     </key>
   </component>
   <component name="RunManager">
@@ -141,7 +138,9 @@
       <workItem from="1606385670318" duration="2504000" />
       <workItem from="1606400195963" duration="5440000" />
       <workItem from="1606477763362" duration="708000" />
-      <workItem from="1606587696779" duration="5800000" />
+      <workItem from="1606587696779" duration="6137000" />
+      <workItem from="1606655031702" duration="2267000" />
+      <workItem from="1606661514347" duration="1890000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit 2 (main files created)">
       <created>1603361144714</created>
@@ -248,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606405741117</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fixed width between cards">
+      <created>1606593868017</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1606593868017</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,7 +299,8 @@
     <MESSAGE value="Merged with authors." />
     <MESSAGE value="CartPage todo." />
     <MESSAGE value="CartPage with context" />
-    <option name="LAST_COMMIT_MESSAGE" value="CartPage with context" />
+    <MESSAGE value="fixed width between cards" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed width between cards" />
   </component>
   <component name="WindowStateProjectService">
     <state x="694" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606320980396">
@@ -337,16 +344,16 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1606321003613" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1606405742612">
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1606593869321">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1606405742612" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604998865448" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606587753946">
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606593869321" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606655283914">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1606400349189" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606587753946" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606655283914" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1605982364275">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
