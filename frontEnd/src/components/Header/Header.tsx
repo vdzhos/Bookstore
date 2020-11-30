@@ -1,4 +1,5 @@
-import React, { useState, useContext } from "react";
+import React, {useContext } from "react";
+import {useHistory} from "react-router-dom";
 import { useForm } from "react-hook-form"
 import { BooksContext } from "../BooksContext"
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
@@ -10,7 +11,6 @@ import {
     FormControl,
     Button,
 } from "react-bootstrap";
-import {useHistory} from "react-router-dom";
 import "./styles.css";
 
 type FormData = {
@@ -19,12 +19,11 @@ type FormData = {
 
 export const Header: React.FC = () => {
   let history = useHistory();
-  const [books, setBooks] = useContext(BooksContext);
+  const [books] = useContext(BooksContext);
   const { register, handleSubmit } = useForm<FormData>();
 
-  const onSubmit = handleSubmit(async ({ input }) => {
+  const onSubmit = handleSubmit(({ input }) => {
     if (books) {
-      let book;
       let foundbooks: { title: string | string[]; }[] = [];
       books.forEach((b: { title: string | string[]; }) => {if(b.title.includes(input)) foundbooks.push(b);})
       history.push(`/search/${input}`, foundbooks);
@@ -43,7 +42,7 @@ export const Header: React.FC = () => {
             <Nav.Link id="nav-link1" className="mx-3" onClick={() => history.push("/authors")}>Authors</Nav.Link>
           </Nav>
           <Form inline onSubmit={onSubmit}>
-            <FormControl name="input" ref={register} id="searchText" type="text" placeholder="Search" className="mr-sm-2" >
+            <FormControl name="input" ref={register} id="searchText" type="text" placeholder="Search" className="mr-sm-2 " >
             </FormControl>
             <Button disabled = {!books} type="submit" className="bg-light"><FontAwesomeIcon id="searchBtn" icon={faSearch} size="lg" /></Button>
                     <FontAwesomeIcon onClick={() => history.push("/cart")}

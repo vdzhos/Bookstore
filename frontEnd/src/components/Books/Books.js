@@ -1,14 +1,14 @@
-import React, { useState, useEffect, useContext } from "react";
-import axios from "axios";
-import { Row } from "react-bootstrap";
+import React, { useContext } from "react";
 import { useHistory } from "react-router-dom";
-import NavigationPanel from "../NavigationPanel"
-import BooksGrid from "../BooksGrid"
+
+import { Row } from "react-bootstrap";
+import Loader from 'react-loader-spinner'
+
+import { BooksContext } from "../BooksContext"
 import Header from "../Header";
 import Footer from "../Footer";
-import { BooksContext } from "../BooksContext"
-import Loader from 'react-loader-spinner'
-import { BookResponse, getAllBooks } from "../../API/books";
+import BooksGrid from "../BooksGrid"
+import NavigationPanel from "../NavigationPanel"
 
 export const Books = (props) => {
     const [booksList, setBooksList] = useContext(BooksContext);

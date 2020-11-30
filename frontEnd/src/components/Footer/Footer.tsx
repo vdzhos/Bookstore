@@ -1,9 +1,8 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faTwitter, faFacebook, faInstagram, faTelegram} from '@fortawesome/free-brands-svg-icons';
+import {faFacebook, faInstagram, faTelegram} from '@fortawesome/free-brands-svg-icons';
 import {faEnvelope, faMapMarkedAlt, faPhoneAlt} from '@fortawesome/free-solid-svg-icons';
-import './bootstrap.min.css';
 import './styles.css';
 
 const Footer = () => {
@@ -37,32 +36,27 @@ const Footer = () => {
                                className="fab fa-telegram-plane primary-text text-decoration-none"><FontAwesomeIcon
                                 icon={faTelegram} textDecoration={"none"}/></a>
                         </li>
-                        {/*<li className="list-inline-item">
-                            <a href="https://twitter.com/" title="twitter" target="_blank"
-                               className="fab fa-twitter primary-text text-decoration-none"><FontAwesomeIcon
-                                icon={faTwitter} textDecoration={"none"}/></a>
-                        </li>*/}
                     </ul>
                 </div>
                 <div className="col-lg-4 d-lg-block d-none info-block  color-gray">
                     <ul className="list-unstyled pl-5 info-list">
                         <li>
-                            <a href="#" title="about us" onClick = {() => history.push("/about")}>About Us</a>
+                            <a title="about us" onClick = {() => history.push("/about")}>About Us</a>
                         </li>
                         <li>
-                            <a href="#" title="delivery">Shipping and Delivery</a>
+                            <a title="delivery" onClick = {() => history.push("/about")}>Shipping and Delivery</a>
                         </li>
                         <li>
-                            <a href="#" title="payment">Payment Options</a>
+                            <a title="payment" onClick = {() => history.push("/about")}>Payment Options</a>
                         </li>
                         <li>
-                            <a href="#" title="returns">Returns</a>
+                            <a title="returns" onClick = {() => history.push("/about")}>Returns</a>
                         </li>
                         <li>
-                            <a href="#" title="loyalty program">Loyalty Program</a>
+                            <a title="loyalty program" onClick = {() => history.push("/about")}>Loyalty Program</a>
                         </li>
                         <li>
-                            <a href="#" title="contact us">Contact Us</a>
+                            <a title="contact us" onClick = {() => history.push("/about")}>Contact Us</a>
                         </li>
                     </ul>
                 </div>

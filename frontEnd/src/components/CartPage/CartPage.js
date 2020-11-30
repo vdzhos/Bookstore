@@ -1,14 +1,14 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
+import { useHistory } from "react-router-dom";
+import { Button } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMinus, faPlus, faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 import Header from "../Header";
 import Footer from "../Footer";
 import { CartContext } from "../CartContext/CartContext";
-import { useHistory } from "react-router-dom";
 import "./styles.css";
-import { Button } from "react-bootstrap";
-import { faMinus, faPlus, faTrashAlt } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export const CartPage = (props) => {
+export const CartPage = () => {
     let history = useHistory();
     const [booksInCart, setBooksInCart] = useContext(CartContext);
     const handleIncreaseNum = (book) => {

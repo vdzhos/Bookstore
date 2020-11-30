@@ -1,23 +1,31 @@
 import React from "react";
 import Carousel from "react-elastic-carousel";
+import {BookResponse} from "../../API/books";
 import BookCard from "../BookCard"
 import "./styles.css";
-import {BookResponse} from "../../API/books";
 
-const breakPoints = [
+const defaultBreakPoints = [
+    {width: 1, itemsToShow: 1},
     {width: 500, itemsToShow: 2},
     {width: 600, itemsToShow: 3},
     {width: 800, itemsToShow: 4},
     {width: 1000, itemsToShow: 6},
 ];
 
-interface CustomCarouselProps {
-    books: BookResponse[],
-    title: string
-    className : string
+
+interface breakPointI{
+    width:number, 
+    itemsToShow:number
 }
 
-export const CustomCarousel: React.FC<CustomCarouselProps> = ({books, title, className}) => {
+interface CustomCarouselProps {
+    books: BookResponse[],
+    title: string,
+    className : string,
+    customBreakPoints : breakPointI[]
+}
+
+export const CustomCarousel: React.FC<CustomCarouselProps> = ({books, title, className, customBreakPoints = []}) => {
     return (
         <div className={className}>
             {
@@ -30,7 +38,7 @@ export const CustomCarousel: React.FC<CustomCarouselProps> = ({books, title, cla
                                     {title}
                                 </div>
                             </div>
-                            <Carousel enableTilt={false} className="pt-4 pb-3" breakPoints={breakPoints}>
+                            <Carousel enableTilt={false} className="pt-4 pb-3" breakPoints={(customBreakPoints.length > 0)? customBreakPoints : defaultBreakPoints} >
                                 {books.map(book => (<BookCard className={"mx-4"} book={book}/>))}
                             </Carousel>
                         </div>

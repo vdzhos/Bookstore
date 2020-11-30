@@ -1,9 +1,9 @@
-import React, { useState, useContext } from "react";
+import React, { useState} from "react";
 import { Row, Button } from "react-bootstrap";
-import "./styles.css"
-import BookCard from "../BookCard";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import BookCard from "../BookCard";
+import "./styles.css"
 
 export const BooksGrid = (props) => {
     const numOfBooks = 20;

@@ -3,8 +3,8 @@ import { useHistory } from "react-router-dom";
 import { Card } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart, faCartPlus } from '@fortawesome/free-solid-svg-icons';
-import "./styles.css";
 import { CartContext } from "../CartContext/CartContext";
+import "./styles.css";
 
 export default (props) => {
     let history = useHistory();

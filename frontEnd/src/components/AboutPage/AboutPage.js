@@ -1,15 +1,15 @@
 import React from 'react';
-import './css/about.css'
 import Header from "../Header";
 import Footer from "../Footer";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faEnvelope, faMapMarkedAlt, faPhoneAlt} from "@fortawesome/free-solid-svg-icons";
 import sloganPhoto from "./css/assets/sloganPhoto.jpg";
 import packagePng from "./css/assets/package.png";
 import truckPng from "./css/assets/truck.png";
 import paymentPng from "./css/assets/payment.png";
 import returnsPng from "./css/assets/returns.png";
 import loyaltyPng from "./css/assets/loyalty.png";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faEnvelope, faMapMarkedAlt, faPhoneAlt} from "@fortawesome/free-solid-svg-icons";
+import './css/about.css'
 
 export const AboutPage = () => {
     return (

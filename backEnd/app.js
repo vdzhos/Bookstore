@@ -37,7 +37,7 @@ app.get("/books/20", async(req, res) => {
     const authors = await Author.find();
     const genres = await Genre.find();
     let bbooks = [];
-    for (let i=0; i<20; i++){
+    for (let i = 27; i <= 47; i++) {
         let book = books[i];
         let author = book.authors[0];
         let a = authors.find((a) => {

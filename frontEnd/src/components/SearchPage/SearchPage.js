@@ -1,10 +1,9 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import NavigationPanel from "../NavigationPanel"
-import BooksGrid from "../BooksGrid"
+import { Row, Button } from "react-bootstrap"
 import Header from "../Header";
 import Footer from "../Footer";
-import { Row, Button } from "react-bootstrap"
+import BooksGrid from "../BooksGrid"
 import "./styles.css";
 
 export const SearchPage = (props) => {
@@ -13,7 +12,8 @@ export const SearchPage = (props) => {
     console.log(location.state);
 
     return (
-        <div>
+        <>
+        {location.state && <div>
         <Header />
             <div className="my-5" >
                 {location.state.length <= 0 && (
@@ -32,6 +32,7 @@ export const SearchPage = (props) => {
                 {location && location.state.length > 0 && <><BooksGrid booksList={location.state} /> <Footer /></> /**/}
             </div>
             
-        </div>
+        </div>}
+        </>
     );
 };

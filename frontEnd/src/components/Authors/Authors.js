@@ -1,18 +1,14 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { useHistory } from "react-router-dom";
 import Header from "../Header";
 import Footer from "../Footer";
 import { CustomCarousel } from "../Carousel/CustomCarousel";
 import Loader from 'react-loader-spinner'
-import { Row, CardDeck } from "react-bootstrap";
-import BookCard from "../BookCard";
+import { Row } from "react-bootstrap";
 import "./styles.css";
 
-export const Authors = (props) => {
-    let history = useHistory();
+export const Authors = () => {
     const [authorsList, setAuthorsList] = useState();
-    let test = "test";
 
     useEffect(() => {
         (async () => {
@@ -41,7 +37,7 @@ export const Authors = (props) => {
                     </Row>
                 )}
                 {authorsList &&
-                    authorsList.map(author => (
+                 authorsList.map(author => (
                         <div>
                             {(author.books).map(book => (
                                 <div className=" mx-5">

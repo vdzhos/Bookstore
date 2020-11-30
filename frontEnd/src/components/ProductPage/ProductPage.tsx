@@ -1,18 +1,20 @@
-import React, { useContext, useState} from "react";
-import {useLocation} from "react-router-dom";
-import { BookResponse } from "../../API/books";
-import { CartContext } from "../CartContext/CartContext";
+import React, { useContext, useState } from "react";
+import { useLocation } from "react-router-dom";
 import Header from "../Header";
 import Footer from "../Footer";
+import { BookResponse } from "../../API/books";
+import { CartContext } from "../CartContext/CartContext";
 import "./styles.css"
 
 export const ProductPage = () => {
     const location = useLocation<BookResponse>();
     const [booksInCart, setBooksInCart] = useContext(CartContext);
-    const [addedToCart, setAddedToCart] = useState(!!booksInCart.find((o: { title: string; }) => o.title === location.state.title));
+    const [addedToCart, setAddedToCart] = useState((location.state) && (!!booksInCart.find((o: { title: string; }) => o.title === location.state.title)));
     console.log(location, "location");
 
     const handleAddToCart = () => {
+        if(!location.state)
+        return;
         if (!addedToCart)
             setBooksInCart([...booksInCart, location.state]);
         else {
@@ -21,10 +23,11 @@ export const ProductPage = () => {
         setAddedToCart(!addedToCart);
     }
 
-    return (
-        <div>
-            <Header />
-            <div className="main-body flex-grow-1 h-100">
+    return (<>
+        {!location.state && "Bad request"}
+
+        {location.state && <div>
+            <Header /><div className="main-body flex-grow-1 h-100">
                 <div className="d-flex justify-content-center align-items-center">
                     <div className="row item-page-container my-4">
                         {/*Title */}
@@ -71,8 +74,8 @@ export const ProductPage = () => {
                         <hr />
                     </div>
                 </div>
-            </div>
-            <Footer />
-        </div>
+            </div><Footer />
+        </div>}
+    </>
     );
 }
