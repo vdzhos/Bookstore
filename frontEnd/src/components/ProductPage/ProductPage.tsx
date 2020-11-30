@@ -5,6 +5,7 @@ import Footer from "../Footer";
 import { BookResponse } from "../../API/books";
 import { CartContext } from "../CartContext/CartContext";
 import "./styles.css"
+import {PageNotFound} from "../PageNotFound/PageNotFound";
 
 export const ProductPage = () => {
     const location = useLocation<BookResponse>();
@@ -23,8 +24,9 @@ export const ProductPage = () => {
         setAddedToCart(!addedToCart);
     }
 
-    return (<>
-        {!location.state && "Bad request"}
+    return (
+        <>
+        {!location.state && <PageNotFound />}
 
         {location.state && <div>
             <Header /><div className="main-body flex-grow-1 h-100">
@@ -76,6 +78,6 @@ export const ProductPage = () => {
                 </div>
             </div><Footer />
         </div>}
-    </>
+        </>
     );
 }

@@ -4,6 +4,7 @@ import { createBrowserHistory } from "history";
 import { routerConfig } from "./routerConfig";
 import {BooksProvider} from "./components/BooksContext"
 import {CartProvider} from "./components/CartContext/CartContext";
+import {PageNotFound} from "./components/PageNotFound/PageNotFound";
 
 const hist = createBrowserHistory();
 
@@ -22,6 +23,7 @@ function App() {
               />
             );
           })}
+          <Route component={PageNotFound}/>
         </Switch>
       </Router>
       </CartProvider>
