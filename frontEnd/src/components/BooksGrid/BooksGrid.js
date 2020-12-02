@@ -15,7 +15,7 @@ export const BooksGrid = (props) => {
     }
 
     return (
-        <div className="my-5">
+        <div className="my-5 px-3">
 
             <Row id="row" className="justify-content-center my-5" >
                 {props.booksList && (
